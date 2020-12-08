@@ -48,7 +48,8 @@ ul.topNav li {
 
 ul.topNav li a {
     color: white;
-    padding: 10px 0px;
+    padding: 5px 0px;
+    font-size: 150%;
     transition: color 1s;
     display: block;
     text-decoration: none;
