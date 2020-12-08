@@ -1,6 +1,6 @@
 body {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     background-color: white;
     transition: background-color 1s;
 }
@@ -14,4 +14,38 @@ p {
 }
 p.darkMode {
     color: white;
+}
+
+h1 {
+    color: black;
+    transition: color 1s;
+}
+h1.darkMode {
+    color: white;
+}
+
+ul.topNav {
+    pardding: 0px;
+    margin: 0px;
+    background-color: black;
+    display: inline-block;
+    transition: background-color 1s;
+    position: fixed;
+}
+ul.topNav.darkMode {
+    background-color: white;
+}
+
+ul.topNav li {
+    float: left;
+    display: block;
+}
+
+ul.topNav li a {
+    color: white;
+    padding: 10px;
+    transition: color 1s;
+}
+ul.topNav.darkMode li a {
+    color: black;
 }
