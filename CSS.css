@@ -43,11 +43,12 @@ ul.topNav.darkMode {
 ul.topNav li {
     float: left;
     display: block;
+    padding: 10px;
 }
 
 ul.topNav li a {
     color: white;
-    padding: 10;
+    padding: 10px 0px;
     transition: color 1s;
     display: block;
     text-decoration: none;
