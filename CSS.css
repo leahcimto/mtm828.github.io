@@ -1,3 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    transition: background-color 1s;
+}
+body.darkMode {
+    background-color: black;
+}
+
 p {
-    color:blue;
+    color: black;
+    transition: color 1s;
+}
+p.darkMode {
+    color: white;
 }
