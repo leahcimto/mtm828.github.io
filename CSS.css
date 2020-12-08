@@ -1,6 +1,6 @@
 body {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     background-color: white;
     transition: background-color 1s;
 }
@@ -43,7 +43,7 @@ ul.topNav li {
 
 ul.topNav li a {
     color: white;
-    padding: 10px;
+    padding: 10;
     transition: color 1s;
 }
 ul.topNav.darkMode li a {
