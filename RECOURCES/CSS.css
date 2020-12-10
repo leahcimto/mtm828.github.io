@@ -16,7 +16,21 @@ p.darkMode {
     color: white;
 }
 
-h1 {
+a {
+    text-decoration: none;
+    color: blue;
+    transition: color 1s;
+}
+a:hover {
+    color: red;
+}
+a.darkMode {
+    color: orange;
+}
+a.darkMode:hover {
+    color: green;
+
+h1, h2, h3, h4, h5, h6 {
     color: black;
     transition: color 1s;
 }
