@@ -21,7 +21,7 @@ p.darkMode {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
     color: blue;
     transition: color 1s;
 }
