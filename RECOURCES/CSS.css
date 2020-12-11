@@ -75,6 +75,7 @@ ul.topNav.darkMode {
 }
 
 ul.topNav li {
+    transition: background-color 1s;
     background-color: #ccc;
     float: left;
     display: block;
