@@ -38,6 +38,12 @@ h1, h2, h3, h4, h5, h6, .page-header {
 h1.darkMode, h2.darkMode, h3.darkMode, h4.darkMode, h5.darkMode, h6.darkMode, .page-header.darkMode {
     color: white;
 }
+.page-header {
+    border-bottom: 1px solid #ccc;
+    transition: border-bottom 1s;
+}
+.page-header.darkMode {
+    border-bottom: 1px solid #333;
 
 .jumbotron {
     background-color: #ccc;
