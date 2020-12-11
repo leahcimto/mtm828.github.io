@@ -75,9 +75,19 @@ ul.topNav.darkMode {
 }
 
 ul.topNav li {
+    background-color: #ccc;
     float: left;
     display: block;
     padding: 10px;
+}
+ul.topNav li:hover {
+    background-color: #333;
+}
+ul.topNav.darkMode li {
+    background-color: #333;
+}
+ul.topNav.darkMode li:hover {
+    background-color: #ccc;
 }
 
 ul.topNav li a {
@@ -89,8 +99,14 @@ ul.topNav li a {
     text-decoration: none;
     text-align: center;
 }
+ul.topNav li:hover a {
+    color: black;
+}
 ul.topNav.darkMode li a {
     color: black;
+}
+ul.topNav.darkMode li:hover a {
+    color: white;
 }
 
 ul.sticky {
