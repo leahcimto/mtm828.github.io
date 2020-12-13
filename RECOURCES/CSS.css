@@ -136,7 +136,7 @@ ul.sticky {
     top: 0;
 }
 .sticky + .topNavbarWrapper {
-    padding-top: 100px;
+    padding-top: 83px;
 }
 
 .switch {
