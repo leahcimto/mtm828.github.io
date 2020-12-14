@@ -25,6 +25,6 @@ var storage = window.localStorage;
 if (localStorage.getItem("darkMode") == undefined) {
     localStorage.setItem("darkMode", false);
 }
-if (dlocalStorage.getItem("darkMode") == true) {
+if (localStorage.getItem("darkMode") == true) {
     toggleDarkMode();
 }
