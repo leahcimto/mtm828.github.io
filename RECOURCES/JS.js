@@ -16,3 +16,11 @@ function toggleDarkMode() {
         elements[i].classList.toggle("darkMode");
     }
 }
+var storage = window.localStorage;
+var darkMode = storage.getItem("darkMode");
+if (darkMode == undefined) {
+    storage.setItem("darkMode", false);
+}
+if (darkMode == true) {
+    toggleDarkMode();
+}
