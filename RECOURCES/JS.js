@@ -15,16 +15,16 @@ function toggleDarkMode() {
     for (i=0; i<elements.length; i++) {
         elements[i].classList.toggle("darkMode");
     }
-    if (!localStorage.getItem("darkMode")) {
-        localStorage.setItem("darkMode", true);
+    if (localStorage.getItem("darkMode") == "false") {
+        localStorage.setItem("darkMode", "true");
     } else {
-        localStorage.setItem("darkMode", false);
+        localStorage.setItem("darkMode", "false");
     }
 }
 var storage = window.localStorage;
 if (localStorage.getItem("darkMode") == undefined) {
-    localStorage.setItem("darkMode", false);
+    localStorage.setItem("darkMode", "false");
 }
-if (localStorage.getItem("darkMode") == true) {
+if (localStorage.getItem("darkMode") == "true") {
     toggleDarkMode();
 }
