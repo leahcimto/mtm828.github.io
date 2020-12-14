@@ -1,1 +1,2 @@
-why r u even here
+My site.
+NOTE: Under construction.
