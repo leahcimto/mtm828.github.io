@@ -15,6 +15,11 @@ function toggleDarkMode() {
     for (i=0; i<elements.length; i++) {
         elements[i].classList.toggle("darkMode");
     }
+    if (!localStorage.getItem("darkMode")) {
+        localStorage.setItem("darkMode", true);
+    } else {
+        localStorage.setItem("darkMode", false);
+    }
 }
 var storage = window.localStorage;
 if (localStorage.getItem("darkMode") == undefined) {
