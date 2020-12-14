@@ -27,4 +27,5 @@ if (localStorage.getItem("darkMode") == undefined) {
 }
 if (localStorage.getItem("darkMode") == "true") {
     toggleDarkMode();
+    document.getElementById("darkModeSwitch").checked = true;
 }
