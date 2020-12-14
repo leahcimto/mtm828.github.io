@@ -17,9 +17,9 @@ function toggleDarkMode() {
     }
 }
 var storage = window.localStorage;
-var darkMode = storage.getItem("darkMode");
+var darkMode = localStorage.getItem("darkMode");
 if (darkMode == undefined) {
-    storage.setItem("darkMode", false);
+    localStorage.setItem("darkMode", false);
 }
 if (darkMode == true) {
     toggleDarkMode();
