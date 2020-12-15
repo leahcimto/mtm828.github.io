@@ -197,11 +197,14 @@ ul.footer.darkMode {
 }
 ul.footer li {
     list-style-type: none;
+    display: block;
 }
 ul.footer li a {
     text-decoration: none !important;
     color: blue;
     transition: color 1s;
+    display: block;
+    margin: 10px;
 }
 ul.footer li a:hover {
     color: red;
