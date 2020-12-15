@@ -198,6 +198,7 @@ ul.footer.darkMode {
 ul.footer li {
     list-style-type: none;
     display: inline-block;
+    overflow: hidden;
 }
 ul.footer li a {
     text-decoration: none !important;
