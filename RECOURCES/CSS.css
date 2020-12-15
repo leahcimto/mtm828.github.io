@@ -185,3 +185,30 @@ input:checked + .slider:before {
 .slider:before {
     border-radius: 50%;
 }
+
+ul.footer {
+    display: inline-block;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    transition: 1s;
+}
+ul.footer.darkMode {
+    border-top: 1px solid #333;
+}
+ul.footer li {
+    list-style-type: none;
+}
+ul.footer li a {
+    text-decoration: none !important;
+    color: blue;
+    transition: color 1s;
+}
+ul.footer li a:hover {
+    color: red;
+}
+ul.footer.darkMode li a {
+    color: orange;
+}
+ul.footer.darkMode li a:hover {
+    color: green;
+}
