@@ -191,6 +191,7 @@ ul.footer {
     width: 100%;
     border-top: 1px solid #ccc;
     transition: 1s;
+    overflow: hidden;
 }
 ul.footer.darkMode {
     border-top: 1px solid #333;
@@ -198,7 +199,6 @@ ul.footer.darkMode {
 ul.footer li {
     list-style-type: none;
     display: inline-block;
-    overflow: hidden;
 }
 ul.footer li a {
     text-decoration: none !important;
