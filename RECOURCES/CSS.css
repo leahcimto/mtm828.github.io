@@ -38,6 +38,7 @@ a.darkMode:hover {
 h1, h2, h3, h4, h5, h6, .page-header {
     color: black;
     transition: color 1s;
+    font-size: 150%;
 }
 h1.darkMode, h2.darkMode, h3.darkMode, h4.darkMode, h5.darkMode, h6.darkMode, .page-header.darkMode {
     color: white;
