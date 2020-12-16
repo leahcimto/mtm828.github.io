@@ -113,8 +113,8 @@ ul.topNav.darkMode li:hover {
 }
 
 ul.topNav li .switch {
-    vertical-align: center;
-    horizontal-align: center;
+    vertical-align: middle;
+    horizontal-align: middle;
 }
 
 ul.topNav li a {
