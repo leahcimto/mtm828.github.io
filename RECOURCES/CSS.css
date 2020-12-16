@@ -113,8 +113,7 @@ ul.topNav.darkMode li:hover {
 }
 
 ul.topNav li label {
-    vertical-align: center;
-    horizontal-align: center;
+    text-align: center;
 }
 
 ul.topNav li a {
@@ -149,6 +148,7 @@ ul.sticky {
     display: inline-block;
     width: 75px;
     height: 34px;
+    display: block;
 }
 .switch input {
     opacity: 0;
