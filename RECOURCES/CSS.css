@@ -6,11 +6,11 @@ body {
 }
 body.darkMode {
     background-color: black;
-    font-family: 'alata';
 }
 
 p, a {
     font-size: 150%;
+    font-family: 'alata';
 }
 
 p {
@@ -41,6 +41,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: color 1s;
     border-bottom: 1px solid #ccc;
     transition: border-bottom 1s;
+    font-family: 'alata';
 }
 h1.darkMode, h2.darkMode, h3.darkMode, h4.darkMode, h5.darkMode, h6.darkMode {
     color: white;
@@ -64,8 +65,12 @@ button {
     background-color: #ccc;
     color: black;
     outline: none;
-    border:none;
-    transition: background 1s, color 1s;
+    border: none;
+    transition: background-color 1s, color 1s;
+    margin: 0px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 175%;
 }
 button:hover {
     background-color: #333;
