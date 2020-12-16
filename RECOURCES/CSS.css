@@ -148,7 +148,6 @@ ul.sticky {
     display: inline-block;
     width: 75px;
     height: 34px;
-    display: block;
 }
 .switch input {
     opacity: 0;
