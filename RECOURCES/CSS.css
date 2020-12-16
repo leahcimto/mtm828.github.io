@@ -100,7 +100,7 @@ ul.topNav li {
     float: left;
     display: block;
     padding: 10px;
-    line-height: 80px;
+    line-height: 50px;
 }
 ul.topNav li:hover {
     background-color: #333;
@@ -110,6 +110,11 @@ ul.topNav.darkMode li {
 }
 ul.topNav.darkMode li:hover {
     background-color: #ccc;
+}
+
+ul.topNav li label {
+    vertical-align: center;
+    horizontal-align: center;
 }
 
 ul.topNav li a {
