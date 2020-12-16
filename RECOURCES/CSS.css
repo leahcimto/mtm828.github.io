@@ -86,6 +86,8 @@ ul.topNav {
     background-color: black;
     display: inline-block;
     transition: background-color 1s;
+    left: 0;
+    right: 0;
     position: sticky;
     position: -webkit-sticky;
     width: 100%;
