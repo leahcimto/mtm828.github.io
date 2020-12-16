@@ -35,27 +35,28 @@ a.darkMode:hover {
     color: green;
 }
 
-h1, h2, h3, h4, h5, h6, .page-header {
+h1, h2, h3, h4, h5, h6 {
     color: black;
     transition: color 1s;
-}
-h1.darkMode, h2.darkMode, h3.darkMode, h4.darkMode, h5.darkMode, h6.darkMode, .page-header.darkMode {
-    color: white;
-}
-.page-header {
     border-bottom: 1px solid #ccc;
     transition: border-bottom 1s;
 }
-.page-header.darkMode {
+h1.darkMode, h2.darkMode, h3.darkMode, h4.darkMode, h5.darkMode, h6.darkMode {
+    color: white;
     border-bottom: 1px solid #333;
 }
 
 .jumbotron {
     background-color: #ccc;
     transition: background-color 1s;
+    border-radius: 5px;
 }
 .jumbotron.darkMode {
     background-color: #333;
+}
+.jumbotron * {
+    margin: 0px;
+    padding: 10px;
 }
 
 button {
@@ -87,7 +88,7 @@ ul.topNav {
     transition: background-color 1s;
     position: sticky;
     position: -webkit-sticky;
-    width: 100%;
+    width: 100vh;
     list-style-type: none;
 }
 ul.topNav.darkMode {
