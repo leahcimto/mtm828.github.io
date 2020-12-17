@@ -49,6 +49,13 @@ body {
     background-color: var(--bodyBg);
     transition: background-color 1s;
 }
+.transitionsDisabled {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+}
 
 p, a {
     font-size: 150%;
