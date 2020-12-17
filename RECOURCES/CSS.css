@@ -1,11 +1,53 @@
+:root {
+    --bodyBg: white;
+    --p: black;
+    --a: blue;
+    --h: black;
+    --hBorderBottom: #ccc;
+    --jumbotronBg: #ccc;
+    --button: black;
+    --buttonBg: #ccc;
+    --ulTopNav: black;
+    --ulTopNavLiBg: #ccc;
+    --ulTopNavLiA: white;
+    --ulFooterBorderBottom: #ccc;
+    --ulFooterLiA: blue;
+}
+.darkMode {
+    --bodyBg: black;
+    --p: white;
+    --a: orange;
+    --h: white;
+    --hBorderBottom: #333;
+    --jumbotronBg: #333;
+    --button: white;
+    --buttonBg: #333;
+    --ulTopNav: white;
+    --ulTopNavLiBg: #333;
+    --ulTopNavLiA: black;
+    --ulFooterBorderBottom: #333;
+    --ulFooterLiA: orange;
+}
+.pageContent > *:hover, ul.topNav > *:hover {
+    --a: red;
+    --button: white;
+    --buttonBg: #333;
+    --ulTopNavLiBg: #333;
+    --ulTopnavLiA: black;
+}
+.darkMode:hover, ul.topNav.darkMode > *:hover {
+    --a: green;
+    --button: black;
+    --buttonBg: #ccc;
+    --ulTopNavLiBg: #ccc;
+    --ulTopnavLiA: white;
+}
+
 body {
     margin: 0;
     padding: 0;
-    background-color: white;
+    background-color: var(--bodyBg);
     transition: background-color 1s;
-}
-body.darkMode {
-    background-color: black;
 }
 
 p, a {
@@ -14,47 +56,29 @@ p, a {
 }
 
 p {
-    color: black;
+    color: var(--p);
     transition: color 1s;
-}
-p.darkMode {
-    color: white;
 }
 
 a {
     text-decoration: none !important;
-    color: blue;
+    color: var(--a);
     transition: color 1s;
-}
-a:hover {
-    color: red;
-}
-a.darkMode {
-    color: orange;
-}
-a.darkMode:hover {
-    color: green;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: black;
-    transition: color 1s, border-bottom 1s;
-    border-bottom: 1px solid #ccc;
+    color: var(--h);
+    transition: color 1s;
+    border-bottom: 1px solid var(--hBorderBottom);
+    transition: border-bottom 1s, color 1s;
     font-family: 'alata';
     font-size: 135%;
 }
-h1.darkMode, h2.darkMode, h3.darkMode, h4.darkMode, h5.darkMode, h6.darkMode {
-    color: white;
-    border-bottom: 1px solid #333;
-}
 
 .jumbotron {
-    background-color: #ccc;
+    background-color: var(--jumbotronBg);
     transition: background-color 1s;
     border-radius: 5px;
-}
-.jumbotron.darkMode {
-    background-color: #333;
 }
 .jumbotron * {
     margin: 0px;
@@ -62,8 +86,8 @@ h1.darkMode, h2.darkMode, h3.darkMode, h4.darkMode, h5.darkMode, h6.darkMode {
 }
 
 button {
-    background-color: #ccc;
-    color: black;
+    background-color: var(--buttonBg);
+    color: var(--button);
     outline: none;
     border: none;
     transition: background-color 1s, color 1s;
@@ -72,24 +96,11 @@ button {
     border-radius: 5px;
     font-size: 175%;
 }
-button:hover {
-    background-color: #333;
-    color: white;
-}
-button.darkMode {
-    background-color: #333;
-    color: white;
-    transition: color 1s;
-}
-button.darkMode:hover {
-    background-color: #ccc;
-    color: black;
-}
 
 ul.topNav {
     padding: 0;
     margin: 0;
-    background-color: black;
+    background-color: var(--ulTopNav);
     display: inline-block;
     transition: background-color 1s;
     position: sticky;
@@ -99,58 +110,24 @@ ul.topNav {
     box-sizing: content-box;
     list-style-type: none;
 }
-ul.topNav.darkMode {
-    background-color: white;
-}
 
 ul.topNav li {
     transition: background-color 1s;
-    background-color: #ccc;
+    background-color: var(--ulTopNavLiBg);
     float: left;
     display: block;
     padding: 10px;
     line-height: 50px;
 }
-ul.topNav li:hover {
-    background-color: #333;
-}
-ul.topNav.darkMode li {
-    background-color: #333;
-}
-ul.topNav.darkMode li:hover {
-    background-color: #ccc;
-}
-
-ul.topNav li .switch {
-    vertical-align: middle;
-    horizontal-align: middle;
-}
 
 ul.topNav li a {
-    color: white;
+    color: var(--ulTopNavLiA);
     padding: 14px;
     font-size: 175%;
     transition: color 1s;
     display: block;
     text-decoration: none;
     text-align: center;
-}
-ul.topNav li:hover a {
-    color: black;
-}
-ul.topNav.darkMode li a {
-    color: black;
-}
-ul.topNav.darkMode li:hover a {
-    color: white;
-}
-
-ul.sticky {
-    position: fixed;
-    top: 0;
-}
-.sticky + .topNavbarWrapper {
-    padding-top: 100px;
 }
 
 .switch {
@@ -216,18 +193,9 @@ ul.footer li {
 }
 ul.footer li a {
     text-decoration: none !important;
-    color: blue;
+    color: var(--ulFooterLiA);
     transition: color 1s;
     display: inline-block;
     margin: 10px;
     text-align: center;
-}
-ul.footer li a:hover {
-    color: red;
-}
-ul.footer.darkMode li a {
-    color: orange;
-}
-ul.footer.darkMode li a:hover {
-    color: green;
 }
