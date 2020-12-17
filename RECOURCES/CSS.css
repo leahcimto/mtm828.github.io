@@ -169,8 +169,7 @@ ul.topNav li a {
     -webkit-transition: 1s;
     transition: 1s;
     border-radius: 34px;
-    vertical-align: middle;
-    horizontal-align: middle;
+    transform: translateY(20%);
 }
 .slider:before {
     position: absolute;
