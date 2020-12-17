@@ -42,6 +42,7 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom: 1px solid #ccc;
     transition: border-bottom 1s;
     font-family: 'alata';
+    font-size: 135%;
 }
 h1.darkMode, h2.darkMode, h3.darkMode, h4.darkMode, h5.darkMode, h6.darkMode {
     color: white;
