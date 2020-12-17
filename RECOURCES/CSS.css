@@ -129,6 +129,13 @@ ul.topNav li a {
     text-decoration: none;
     text-align: center;
 }
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.sticky + .pageContent {
+    padding-top: 100px;
 
 .switch {
     position: relative;
