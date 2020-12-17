@@ -1,3 +1,5 @@
+var i;
+
 window.onscroll = function(){updateTopNavbar()};
 var navbar = document.getElementById("topNav");
 var sticky = navbar.offsetTop;
@@ -26,7 +28,13 @@ if (localStorage.getItem("darkMode") == undefined) {
     localStorage.setItem("darkMode", "false");
 }
 if (localStorage.getItem("darkMode") == "true") {
+    for (i = 0; i < querySelectorAll("*").length; i++) {
+        querySelectorAll("*")[i].style.transition="transition: 0s;";
+    }
     toggleDarkMode();
     document.getElementById("darkModeSwitch").checked = true;
     localStorage.setItem("darkMode", "true");
+    for (i = 0; i < querySelectorAll("*").length; i++) {
+        querySelectorAll("*")[i].style.transition="";
+    }
 }
