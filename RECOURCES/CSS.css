@@ -143,6 +143,7 @@ ul.topNav li a {
 }
 .sticky + .pageContent {
     padding-top: 100px;
+}
 
 .switch {
     position: relative;
@@ -166,6 +167,8 @@ ul.topNav li a {
     -webkit-transition: 1s;
     transition: 1s;
     border-radius: 34px;
+    vertical-align: middle;
+    horizontal-align: middle;
 }
 .slider:before {
     position: absolute;
