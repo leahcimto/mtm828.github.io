@@ -31,5 +31,5 @@ if (localStorage.getItem("darkMode") == "true") {
     toggleDarkMode();
     document.getElementById("darkModeSwitch").checked = true;
     localStorage.setItem("darkMode", "true");
-    document.body.classList.remove("transitionsDisabled");
 }
+document.body.classList.remove("transitionsDisabled");
