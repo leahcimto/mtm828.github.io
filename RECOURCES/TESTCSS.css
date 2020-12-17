@@ -1,0 +1,8 @@
+:root {
+    --p: black;
+    --body: white;
+}
+.darkMode {
+    --p: white;
+    --body: black;
+}
