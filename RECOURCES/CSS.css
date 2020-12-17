@@ -38,9 +38,8 @@ a.darkMode:hover {
 
 h1, h2, h3, h4, h5, h6 {
     color: black;
-    transition: color 1s;
+    transition: color 1s, border-bottom 1s;
     border-bottom: 1px solid #ccc;
-    transition: border-bottom 1s;
     font-family: 'alata';
     font-size: 135%;
 }
