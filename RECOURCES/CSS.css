@@ -49,7 +49,7 @@ body {
     background-color: var(--bodyBg);
     transition: background-color 1s;
 }
-.transitionsDisabled, transitionsDisabled > * {
+.transitionsDisabled, .transitionsDisabled > * {
     -webkit-transition: none !important;
     -moz-transition: none !important;
     -ms-transition: none !important;
