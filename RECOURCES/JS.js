@@ -29,12 +29,12 @@ if (localStorage.getItem("darkMode") == undefined) {
 }
 if (localStorage.getItem("darkMode") == "true") {
     for (i = 0; i < querySelectorAll("*").length; i++) {
-        querySelectorAll("*")[i].style.transition="0s;";
+        document.querySelectorAll("*")[i].style.transition="0s;";
     }
     toggleDarkMode();
     document.getElementById("darkModeSwitch").checked = true;
     localStorage.setItem("darkMode", "true");
     for (i = 0; i < querySelectorAll("*").length; i++) {
-        querySelectorAll("*")[i].style.transition="";
+        document.querySelectorAll("*")[i].style.transition="";
     }
 }
