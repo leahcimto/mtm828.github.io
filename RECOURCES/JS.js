@@ -29,7 +29,7 @@ if (localStorage.getItem("darkMode") == undefined) {
 }
 if (localStorage.getItem("darkMode") == "true") {
     for (i = 0; i < document.querySelectorAll("*").length; i++) {
-        document.querySelectorAll("*")[i].style.transition="0s;";
+        document.querySelectorAll("*")[i].style.transition="0s";
     }
     toggleDarkMode();
     document.getElementById("darkModeSwitch").checked = true;
