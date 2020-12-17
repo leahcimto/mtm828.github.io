@@ -140,6 +140,8 @@ ul.topNav li a {
     position: fixed;
     top: 0;
     width: 100%;
+    vertical-align: middle;
+    horizontal-align: middle;
 }
 .sticky + .pageContent {
     padding-top: 100px;
