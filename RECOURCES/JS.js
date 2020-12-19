@@ -35,6 +35,9 @@ if (localStorage.getItem("darkMode") == "true") {
     document.getElementById("darkModeSwitch").checked = true;
     localStorage.setItem("darkMode", "true");
 }
-for (i = 0; i < document.querySelectorAll("*").length; i++) {
-    document.querySelectorAll("*")[i].style.transition="1s";
+function afterLoad() {
+    for (i = 0; i < document.querySelectorAll("*").length; i++) {
+        document.querySelectorAll("*")[i].style.transition="1s";
+    }
 }
+window.addEventListener('load', afterLoad, false );
