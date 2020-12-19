@@ -27,14 +27,14 @@ var storage = window.localStorage;
 if (localStorage.getItem("darkMode") == undefined) {
     localStorage.setItem("darkMode", "false");
 }
+for (i = 0; i < document.querySelectorAll("*").length; i++) {
+    document.querySelectorAll("*")[i].style.transition="0s";
+}
 if (localStorage.getItem("darkMode") == "true") {
-    for (i = 0; i < document.querySelectorAll("*").length; i++) {
-        document.querySelectorAll("*")[i].style.transition="0s";
-    }
     toggleDarkMode();
-    for (i = 0; i < document.querySelectorAll("*").length; i++) {
-        document.querySelectorAll("*")[i].style.transition="1s";
-    }
     document.getElementById("darkModeSwitch").checked = true;
     localStorage.setItem("darkMode", "true");
+}
+for (i = 0; i < document.querySelectorAll("*").length; i++) {
+    document.querySelectorAll("*")[i].style.transition="1s";
 }
