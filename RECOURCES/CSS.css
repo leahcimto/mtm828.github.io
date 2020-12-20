@@ -173,14 +173,15 @@ ul.topNav li a {
 input:checked + .slider {
     background-color: black;
 }
-input:checked + .slider:before {
+input:checked + .slider::before {
     -webkit-transform: translateX(40px);
     -ms-transform: translateX(40px);
     transform: translateX(40px);
     background-color: white;
 }
-.slider:before {
+.slider::before {
     border-radius: 50%;
+    transition: 1s;
 }
 
 ul.footer {
