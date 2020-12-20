@@ -28,14 +28,14 @@
     --ulFooterBorderBottom: #333;
     --ulFooterLiA: orange;
 }
-.pageContent > *:hover, ul.topNav > *:hover {
+.pageContent > *:hover, ul.topNav > *:hover, ul.footer > *:hover {
     --a: red;
     --button: white;
     --buttonBg: #333;
     --ulTopNavLiBg: #333;
     --ulTopnavLiA: black;
 }
-.darkMode:hover, ul.topNav.darkMode > *:hover {
+.darkMode:hover, ul.topNav.darkMode > *:hover, ul.footer > *:hover {
     --a: green;
     --button: black;
     --buttonBg: #ccc;
@@ -43,7 +43,7 @@
     --ulTopnavLiA: white;
 }
 
-*, * > * {
+* {
     transition: 1s;
 }
 
@@ -51,7 +51,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--bodyBg);
-    width: 100%;
 }
 
 .pageContent {
@@ -125,7 +124,6 @@ ul.topNav li a {
     color: var(--ulTopNavLiA);
     padding: 14px;
     font-size: 175%;
-    transition: color 1s;
     display: block;
     text-decoration: none;
     text-align: center;
