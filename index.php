@@ -36,6 +36,9 @@
                 <br><br><br><br><br>
                 <button onclick="">click to be cursed!</button>
                 <br><br><br><br><br>
+                <?php
+                    include "https://mtm828.github.io/RECOURCES/PHP.php";
+                ?>
                 <p>bye stupid world</p>
                 <ul class="footer">
                     <li><a href="https://github.com/mtm828"><img width="50px" height="50px" src="https://avatars2.githubusercontent.com/u/71281115?s=460&v=4"></a></li>
