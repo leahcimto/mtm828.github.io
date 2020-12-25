@@ -9,5 +9,6 @@
         ajax = new XMLHttpRequest();
         ajax.open("POST", "https://mtm828.github.io/TESTS/JSON.json");
         ajax.send();
+        elm = document.getElementById("JSON").innerHtml = "<p>" + info.name + "</p>";
     </script>
 </html>
