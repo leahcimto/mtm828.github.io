@@ -8,7 +8,12 @@
     <script>
         ajax = new XMLHttpRequest();
         ajax.open("POST", "https://mtm828.github.io/TESTS/JSON.json");
+        ajax.responceType = "json";
         ajax.send();
-        elm = document.getElementById("JSON").innerHtml = "<p>" + info.name + "</p>";
+        ajax.onload = function() {
+            const data = ajax.responce;
+        }
+        elm = document.getElementById("JSON");
+        elm.innerHtml = "<p>" + data.info.name + "</p>";
     </script>
 </html>
