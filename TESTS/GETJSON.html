@@ -12,8 +12,8 @@
         ajax.send();
         ajax.onload = function() {
             const data = ajax.responce;
+            elm = document.getElementById("JSON");
+            elm.innerHtml = "<p>" + data.info.name + "</p>";
         }
-        elm = document.getElementById("JSON");
-        elm.innerHtml = "<p>" + data.info.name + "</p>";
     </script>
 </html>
