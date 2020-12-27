@@ -10,7 +10,7 @@
         ajax.responceType = "json";
         ajax.open("GET", "https://mtm828.github.io/TESTS/JSON.json");
         ajax.send();
-        ajax.onReadyStateChange = function() {
+        ajax.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
                 var data = JSON.parse(this.responseText);
                 elm = document.getElementById("JSON");
