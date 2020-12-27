@@ -12,7 +12,7 @@
         ajax.send();
         ajax.onload = function() {
             elm = document.getElementById("JSON");
-            elm.innerHtml = "<p>" + ajax.response.info.name + "</p>";
+            elm.innerHtml = "<p>" + JSON.parse(ajax.response).info.name + "</p>";
         }
     </script>
 </html>
