@@ -14,7 +14,7 @@
             if (ajax.readyState == 4 && ajax.status == 200) {
                 var data = JSON.parse(ajax.responseText);
                 elm = document.getElementById("JSON");
-                elm.innerHtml = "<p>" + data.info.name + "</p>";
+                elm.innerHTML = "<p>" + data.info.name + "</p>";
             }
         }
     </script>
