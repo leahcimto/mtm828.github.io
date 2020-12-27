@@ -10,9 +10,12 @@
         ajax.responceType = "json";
         ajax.open("POST", "https://mtm828.github.io/TESTS/JSON.json");
         ajax.send();
-        ajax.onload = function() {
-            elm = document.getElementById("JSON");
-            elm.innerHtml = "<p>" + JSON.parse(ajax.response).info.name + "</p>";
+        ajax.onReadyStateChange = function() {
+            if (ajax.readyState == 4 && ajax.status == 200) {
+                var data = JSON.parse(ajax.responseText);
+                elm = document.getElementById("JSON");
+                elm.innerHtml = "<p>" + data.info.name + "</p>";
+            }
         }
     </script>
 </html>
