@@ -7,13 +7,12 @@
     </body>
     <script>
         ajax = new XMLHttpRequest();
-        ajax.open("POST", "https://mtm828.github.io/TESTS/JSON.json");
         ajax.responceType = "json";
+        ajax.open("POST", "https://mtm828.github.io/TESTS/JSON.json");
         ajax.send();
         ajax.onload = function() {
-            const data = ajax.responce;
             elm = document.getElementById("JSON");
-            elm.innerHtml = "<p>" + data.info.name + "</p>";
+            elm.innerHtml = "<p>" + ajax.response.info.name + "</p>";
         }
     </script>
 </html>
