@@ -11,10 +11,10 @@
         ajax.open("GET", "https://mtm828.github.io/TESTS/JSON.json");
         ajax.send();
         ajax.onReadyStateChange = function() {
-            if (ajax.readyState == 4 && ajax.status == 200) {
-                var data = JSON.parse(ajax.responseText);
+            if (this.readyState == 4 && this.status == 200) {
+                var data = JSON.parse(this.responseText);
                 elm = document.getElementById("JSON");
-                elm.innerHTML = "<p>" + data.info.name + "</p>";
+                elm.innerHTML = "<p>" + data + "</p>";
             }
         }
     </script>
