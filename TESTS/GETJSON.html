@@ -8,7 +8,7 @@
     <script>
         ajax = new XMLHttpRequest();
         ajax.responceType = "json";
-        ajax.open("POST", "https://mtm828.github.io/TESTS/JSON.json");
+        ajax.open("GET", "https://mtm828.github.io/TESTS/JSON.json");
         ajax.send();
         ajax.onReadyStateChange = function() {
             if (ajax.readyState == 4 && ajax.status == 200) {
