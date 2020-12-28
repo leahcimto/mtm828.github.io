@@ -45,7 +45,7 @@
         </div>
     </body>
     <script src="https://mtm828.github.io/RECOURCES/JS.js">
-        window.onload=function() {
+        function initialiseDescription() {
             fetchJson("https://mtm828.github.io/RESOURCES/JSON/ABOUT.json");
             elm = document.getElementById("description"):
             var description;
@@ -53,5 +53,6 @@
             description += json.hates[0].name;
             elm.innerHHTML = description;
         }
+        initialiseDescription();
     </script>
 </html>
