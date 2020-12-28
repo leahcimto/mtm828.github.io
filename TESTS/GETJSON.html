@@ -13,7 +13,7 @@
             ajax.send();
             ajax.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
-                    var data = JSON.parse(JSON.stringify(this.responseText));
+                    const data = JSON.parse(JSON.stringify(this.responseText));
                     elm = document.getElementById("JSON");
                     elm.innerHTML = "<p>" + data.info.name + "</p>";
                 }
