@@ -37,11 +37,21 @@
             <br><br><br><br><br>
             <p>bye stupid world</p>
             </div>
+            <p id="description"></p>
             <ul class="footer">
                 <li><a href="https://github.com/mtm828"><img width="50px" height="50px" src="https://avatars2.githubusercontent.com/u/71281115?s=460&v=4"></a></li>
                 <li><a href="https://mtm828.github.io/index.html">Home</a></li>
             </ul>
         </div>
     </body>
-        <script src="https://mtm828.github.io/RECOURCES/JS.js"></script>
+    <script src="https://mtm828.github.io/RECOURCES/JS.js">
+        window.onload=function() {
+            fetchJson("https://mtm828.github.io/RESOURCES/JSON/ABOUT.json");
+            elm = document.getElementById("description"):
+            var description;
+            description += json.info.name;
+            description += json.hates[0].name;
+            elm.innerHHTML = description;
+        }
+    </script>
 </html>
