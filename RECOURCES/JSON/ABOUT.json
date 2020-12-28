@@ -6,10 +6,7 @@
         "learning":["PHP"],
         "inProggress":["my site", "C++ programs"],
         "otherAccs":[
-            "scratch":{
-                "name":"Scratch",
-                "link":"scratch.mit.edu/users/MTM828"
-            }
+            {"name":"Scratch","link":"scratch.mit.edu/users/MTM828"}
         ]
     },
     "likes":[
