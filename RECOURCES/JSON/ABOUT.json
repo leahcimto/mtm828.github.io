@@ -1,0 +1,31 @@
+{
+    "me":{
+        "name":"MTM828",
+        "status":"🎅 Merry Christmas!",
+        "knows":["HTML5", "CSS", "JavaScript", "Python", "C++", "Java"],
+        "learning":["PHP"],
+        "inProggress":["my site", "C++ programs"],
+        "otherAccs":[
+            "scratch":{
+                "name":"Scratch"
+                "link":"scratch.mit.edu/users/MTM828"
+            }
+        ]
+    },
+    "likes":[
+        "github":{
+            "name":"GitHub",
+            "reason":""
+        }
+    ],
+    "hates":{
+        "stackoverflow":{
+            "name":"Stack Overflow",
+            "reason":"Stack Overflow's rules are just really cringy, and the community is even cringier!"
+        },
+        "scratch":{
+            "name":"Scratch",
+            "reason":"Too underpowered, actually Scratch is pretty good, but just too underpowered! The average FPS is like 20 or something."
+        }
+    }
+}
