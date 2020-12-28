@@ -1,7 +1,7 @@
 {
     info:{
         "name":"MTM828",
-        "workingOn:["Site", "C++ graphics"],
+        "workingOn":["Site", "C++ graphics"],
         "knows":["HTML5", "CSS", "JavaScript", "Python", "C++", "Java"],
         "learning":["PHP"]
     }
