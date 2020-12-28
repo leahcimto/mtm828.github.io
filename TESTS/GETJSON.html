@@ -11,7 +11,7 @@
             ajax.responceType = "json";
             ajax.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
-                    const data = JSON.parse(JSON.stringify(this.responseText));
+                    var data = JSON.parse(this.responseText);
                     elm = document.getElementById("JSON");
                     elm.innerHTML = "<p>" + data.info.name + "</p>";
                 }
