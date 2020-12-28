@@ -13,19 +13,10 @@
         ]
     },
     "likes":[
-        "github":{
-            "name":"GitHub",
-            "reason":""
-        }
+        {"name":"GitHub", "reason":""}
     ],
     "hates":[
-        "stackoverflow":{
-            "name":"Stack Overflow",
-            "reason":"Stack Overflow's rules are just really cringy, and the community is even cringier!"
-        },
-        "scratch":{
-            "name":"Scratch",
-            "reason":"Too underpowered, actually Scratch is pretty good, but just too underpowered! The average FPS is like 20 or something."
-        }
+        {"name":"Stack Overflow", "reason":"Stack Overflow's rules are just really cringy, and the community is even cringier!"},
+        {"name":"Scratch", "reason":"Too underpowered, actually Scratch is pretty good, but just too underpowered! The average FPS is like 20 or something."}
     ]
 }
