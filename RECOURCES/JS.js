@@ -1,4 +1,5 @@
 var i;
+var json = {};
 
 window.onscroll = function(){updateTopNavbar()};
 var navbar = document.getElementById("topNav");
@@ -41,3 +42,15 @@ function afterLoad() {
     }
 }
 window.addEventListener('load', afterLoad, false );
+
+function fettchJson(url) {
+    ajax = new XMLHttpRequest();
+    ajax.responceType = "json";
+    ajax.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            json += JSON.parse(this.responseText);
+        }
+    }
+    ajax.open("GET", url);
+    ajax.send();
+}
