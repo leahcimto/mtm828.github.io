@@ -3,18 +3,20 @@
     <head>
     </head>
     <body>
-        <p id="JSON">Just a moment...</p>
+        <p id="JSON" onClick="getJson()">Just a moment...</p>
     </body>
     <script>
-        ajax = new XMLHttpRequest();
-        ajax.responceType = "json";
-        ajax.open("GET", "https://mtm828.github.io/TESTS/JSON.json");
-        ajax.send();
-        ajax.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                var data = JSON.parse(JSON.stringify(this.responseText));
-                elm = document.getElementById("JSON");
-                elm.innerHTML = "<p>" + data.info.name + "</p>";
+        function getJson() {
+            ajax = new XMLHttpRequest();
+            ajax.responceType = "json";
+            ajax.open("GET", "https://mtm828.github.io/TESTS/JSON.json");
+            ajax.send();
+            ajax.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    var data = JSON.parse(JSON.stringify(this.responseText));
+                    elm = document.getElementById("JSON");
+                    elm.innerHTML = "<p>" + data.info.name + "</p>";
+                }
             }
         }
     </script>
