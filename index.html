@@ -54,6 +54,6 @@
             description += json.hates[0].name;
             elm.innerHHTML = description;
         }
-        document.addEventListener("load", "initialiseDescription()");
+        window.onload = initialiseDescription;
     </script>
 </html>
