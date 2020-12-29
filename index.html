@@ -47,7 +47,14 @@
     <script src="https://mtm828.github.io/RECOURCES/JS.js"></script>
     <script>
         function initialiseDescription() {
-            json = fetchJson("https://mtm828.github.io/RESOURCES/JSON/ABOUT.json");
+            var json;
+            ajax = new XMLHttpRequest();
+            ajax.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                data = JSON.parse(this.responseText);
+            }
+            ajax.open("GET", url, true);
+            ajax.send();
             elm = document.getElementById("description");
             var description;
             description += json.name.name;
