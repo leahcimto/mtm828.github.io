@@ -46,32 +46,16 @@
     </body>
     <script src="https://mtm828.github.io/RECOURCES/JS.js"></script>
     <script>
-        /*var json;
-        var ajax;
-        var elm;
-        var desc;
-        function initDesc() {
-            ajax = new XMLHttpRequest();
-            ajax.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
-                    json = JSON.parse(this.responseText);
-                }
-            }
-            ajax.open("GET", "https://mtm828.github.io/RECOURSES/JSON/ABOUT.json", true);
-            ajax.send();
-            elm = document.getElementById("description");
-            desc += json.name.name;
-            elm.innerHHTML = desc;
-        }
-        window.onload = initDesc;*/
         function initdesc() {
             ajax = new XMLHttpRequest();
             ajax.responceType = "json";
             ajax.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
                     var json = JSON.parse(JSON.parse(JSON.stringify(this.responseText)));
-                    elm = document.getElementById("description");
-                    elm.innerHTML = "<p>" + json.me.name + "</p>";
+                    desc = document.getElementById("description").innerHTML;
+                    desc = "<p style=\"text-align: center; font-family: abel;\"> Hey there, I'm " + json.me.name + "!</p><br>";
+                    desc += "<p style=\"text-align: center;\">I code in:
+                    desc += "</p><br>"
                 }
             }
             ajax.open("GET", "https://mtm828.github.io/RECOURCES/JSON/ABOUT.json", true);
