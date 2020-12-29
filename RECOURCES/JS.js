@@ -43,7 +43,7 @@ function afterLoad() {
 }
 window.addEventListener('load', afterLoad, false );
 
-function fettchJson(url) {
+function fetchJson(url) {
     ajax = new XMLHttpRequest();
     ajax.responceType = "json";
     ajax.onreadystatechange = function() {
