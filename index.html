@@ -49,8 +49,9 @@
             var json;
             ajax = new XMLHttpRequest();
             ajax.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                json = JSON.parse(this.responseText);
+                if (this.readyState == 4 && this.status == 200) {
+                    json = JSON.parse(this.responseText);
+                }
             }
             ajax.open("GET", url, true);
             ajax.send();
