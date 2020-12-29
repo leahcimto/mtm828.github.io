@@ -46,7 +46,7 @@
     </body>
     <script src="https://mtm828.github.io/RECOURCES/JS.js"></script>
     <script>
-        var json;
+        /*var json;
         var ajax;
         var elm;
         var desc;
@@ -63,6 +63,20 @@
             desc += json.name.name;
             elm.innerHHTML = desc;
         }
-        window.onload = initDesc;
+        window.onload = initDesc;*/
+        function initdesc() {
+            ajax = new XMLHttpRequest();
+            ajax.responceType = "json";
+            ajax.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    var desc = JSON.parse(this.responseText);
+                    elm = document.getElementById("description");
+                    elm.innerHTML = "<p>" + desc.info.name + "</p>";
+                }
+            }
+            ajax.open("GET", "https://mtm828.github.io/RECOURCES/JSON/ABOUT.json", true);
+            ajax.send();
+        }
+        window.onload = initdesc;
     </script>
 </html>
