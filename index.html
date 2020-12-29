@@ -46,8 +46,11 @@
     </body>
     <script src="https://mtm828.github.io/RECOURCES/JS.js"></script>
     <script>
-        function initialiseDescription() {
-            var json;
+        var json;
+        var ajax;
+        var elm;
+        var desc;
+        function initDesc() {
             ajax = new XMLHttpRequest();
             ajax.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
@@ -57,9 +60,8 @@
             ajax.open("GET", "https://mtm828.github.io/RECOURSES/JSON/ABOUT.json", true);
             ajax.send();
             elm = document.getElementById("description");
-            var description;
-            description += json.name.name;
-            elm.innerHHTML = description;
+            desc += json.name.name;
+            elm.innerHHTML = desc;
         }
         window.onload = initialiseDescription;
     </script>
