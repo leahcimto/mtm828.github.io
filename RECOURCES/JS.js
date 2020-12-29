@@ -51,7 +51,7 @@ function fetchJson(url) {
             data = JSON.parse(this.responseText);
         }
     }
-    ajax.open("GET", url);
+    ajax.open("GET", url, false);
     ajax.send();
     return data;
 }
