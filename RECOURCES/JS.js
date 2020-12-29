@@ -45,13 +45,12 @@ window.addEventListener('load', afterLoad, false );
 function fetchJson(url) {
     var data;
     ajax = new XMLHttpRequest();
-    ajax.responceType = "json";
     ajax.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             data = JSON.parse(this.responseText);
         }
     }
-    ajax.open("GET", url, false);
+    ajax.open("GET", url, true);
     ajax.send();
     return data;
 }
