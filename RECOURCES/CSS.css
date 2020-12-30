@@ -137,7 +137,7 @@ ul.topNav li a {
     horizontal-align: middle;
 }
 .sticky + .pageContent {
-    padding-top: 100px;
+    padding-top: 120px;
 }
 
 .switch {
