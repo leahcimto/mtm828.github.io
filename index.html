@@ -68,8 +68,10 @@
             }
             ajax.open("GET", "https://mtm828.github.io/RECOURCES/JSON/ABOUT.json", true);
             ajax.send();
+        }
+        window.onload = function() {
+            hideLoadingScreen();
             initDesc();
         }
-        window.onload = hideLoadingScreen;
     </script>
 </html>
