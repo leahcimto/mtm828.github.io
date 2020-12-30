@@ -24,28 +24,14 @@
         <div class="topNavbarWrapper"></div>
         <p id="loadingScreen" style="position: fixed; top: 0; bottom: 0; right: 0; left: 0; width: 100%; height: 100%; background-color: var(--loadingScreenBg); box-sizing: content-box;"></p>
         <div class="pageContent">
-            <div style="display:none;">
-            <p>hello stupid world</p>
-            <br><br><br><br><br>
-            <a href="">blah</a>
-            <br><br><br><br><br>
-            <h3>peanuts yum</h3>
-            <div class="jumbotron">
-                <p>bootstrap is wooorkiinnng<br><b>edit:</b> nvm i ditched bootstrap cuz it sucks >:)</p>
-            </div>
-            <br><br><br><br><br>
-            <button onclick="">click to be cursed!</button>
-            <br><br><br><br><br>
-            <p>bye stupid world</p>
-            </div>
             <p id="description">Just a moment...</p>
             <ul class="footer">
                 <li><a href="https://github.com/mtm828"><img width="50px" height="50px" src="https://avatars2.githubusercontent.com/u/71281115?s=460&v=4"></a></li>
-                <li><a href="https://mtm828.com/index.html">Home</a></li>
+                <li><a href="/index.html">Home</a></li>
             </ul>
         </div>
     </body>
-    <script src="https://mtm828.github.io/RECOURCES/JS.js"></script>
+    <script src="/RECOURCES/JS.js"></script>
     <script>
         function hideLoadingScreen() {
             var screen = document.getElementById("loadingScreen");
@@ -66,7 +52,7 @@
                     desc.innerHTML += "</ul></div><br>"
                 }
             }
-            ajax.open("GET", "https://mtm828.com/RECOURCES/JSON/ABOUT.json", true);
+            ajax.open("GET", "/RECOURCES/JSON/ABOUT.json", true);
             ajax.send();
         }
         window.onload = function() {
