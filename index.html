@@ -52,10 +52,10 @@
             ajax.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
                     var json = JSON.parse(JSON.parse(JSON.stringify(this.responseText)));
-                    desc = document.getElementById("description").innerHTML;
-                    desc = "<p style=\"text-align: center; font-family: abel;\"> Hey there, I'm " + json.me.name + "!</p><br>";
-                    desc += "<p style=\"text-align: center;\">I code in:"
-                    desc += "</p><br>"
+                    desc = document.getElementById("description");
+                    desc.innerHTML = "<p style=\"text-align: center; font-family: abel;\"> Hey there, I'm " + json.me.name + "!</p><br>";
+                    desc.innerHTML += "<p style=\"text-align: center;\">I code in:"
+                    desc.innerHTML += "</p><br>"
                 }
             }
             ajax.open("GET", "https://mtm828.github.io/RECOURCES/JSON/ABOUT.json", true);
