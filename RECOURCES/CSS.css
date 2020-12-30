@@ -43,11 +43,6 @@
     --ulTopnavLiA: white;
 }
 
-* {
-    transition: 1s;
-    box-sizing:border-box;
-}
-
 body {
     margin: 0;
     padding: 0;
@@ -204,4 +199,12 @@ ul.footer li a {
     display: inline-block;
     margin: 10px;
     text-align: center;
+}
+
+* {
+
+    transition: 1s;
+
+    box-sizing:border-box;
+
 }
