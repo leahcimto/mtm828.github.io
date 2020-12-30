@@ -59,7 +59,7 @@
                     var json = JSON.parse(JSON.parse(JSON.stringify(this.responseText)));
                     desc = document.getElementById("description");
                     desc.innerHTML = "<div style=\"text-align: center; transition: 0s;\"><p style=\"font-family: abel;\">Hey there, I'm " + json.me.name + "!</p><br>";
-                    desc.innerHTML += "<p>I code in:</p><ul>"
+                    desc.innerHTML += "<p>I code in:</p><ul style=\"transition: 0s\">"
                     for (i=0; i<json.me.knows.length; i++) {
                         desc.innerHTML += "<li>" + json.me.knows[i] + "</li>";
                     }
