@@ -22,6 +22,7 @@
             </li>
         </ul>
         <div class="topNavbarWrapper"></div>
+        <p id="loadingScreen" style="position: fixed; top: 0; bottom: 0; right: 0; left: 0; width: 100%; height: 100%; background-color: #333;"></p>
         <div class="pageContent">
             <div style="display:none;">
             <p>hello stupid world</p>
@@ -46,14 +47,18 @@
     </body>
     <script src="https://mtm828.github.io/RECOURCES/JS.js"></script>
     <script>
-        function initdesc() {
+        function hideLoadingScreen() {
+            var screen = document.getElementById("loadingScreen");
+            screen.style.display = "none";
+        }
+        function initDesc() {
             ajax = new XMLHttpRequest();
             ajax.responceType = "json";
             ajax.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
                     var json = JSON.parse(JSON.parse(JSON.stringify(this.responseText)));
                     desc = document.getElementById("description");
-                    desc.innerHTML = "<p style=\"text-align: center; font-family: abel;\"> Hey there, I'm " + json.me.name + "!</p><br>";
+                    desc.innerHTML = "<p style=\"text-align: center; font-family: abel;\">Hey there, I'm " + json.me.name + "!</p><br>";
                     desc.innerHTML += "<p style=\"text-align: center;\">I code in:</p><ul>"
                     for (i=0; i<json.me.knows.length; i++) {
                         desc.innerHTML += "<li>" + json.me.knows[i] + "</li>";
@@ -64,6 +69,7 @@
             ajax.open("GET", "https://mtm828.github.io/RECOURCES/JSON/ABOUT.json", true);
             ajax.send();
         }
-        window.onload = initdesc;
+        window.onload = initDesc;
+        window.onload = hideLoadingScreen;
     </script>
 </html>
