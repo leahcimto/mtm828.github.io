@@ -1,4 +1,5 @@
 var i;
+var storage = window.localStorage;
 
 window.onscroll = function(){updateTopNavbar()};
 var navbar = document.getElementById("topNav");
@@ -23,7 +24,6 @@ function toggleDarkMode() {
         localStorage.setItem("darkMode", "false");
     }
 }
-var storage = window.localStorage;
 if (localStorage.getItem("darkMode") == undefined) {
     localStorage.setItem("darkMode", "false");
 }
@@ -34,23 +34,4 @@ if (localStorage.getItem("darkMode") == "true") {
     toggleDarkMode();
     document.getElementById("darkModeSwitch").checked = true;
     localStorage.setItem("darkMode", "true");
-}
-function afterLoad() {
-    for (i = 0; i < document.querySelectorAll("*").length; i++) {
-        document.querySelectorAll("*")[i].style.transition="1s";
-    }
-}
-window.addEventListener('load', afterLoad, false );
-
-function fetchJson(url) {
-    var data;
-    ajax = new XMLHttpRequest();
-    ajax.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            data = JSON.parse(this.responseText);
-        }
-    }
-    ajax.open("GET", url, true);
-    ajax.send();
-    return data;
 }
