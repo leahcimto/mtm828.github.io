@@ -29,9 +29,7 @@
     --ulFooterBorderTop: #333;
     --ulFooterLiA: orange;
     --loadingScreenBg: #333333;
-}
-html > * {
-    
+}   
 
 html > * {
     transition: 1s;
