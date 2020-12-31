@@ -31,7 +31,7 @@
     --loadingScreenBg: #333333;
 }   
 
-:not(.darkMode):hover {
+*:hover, * > *:hover {
     --a: red;
     --button: white;
     --buttonBg: #333;
@@ -45,7 +45,7 @@
     --ulTopNavLiBg: #ccc;
     --ulTopnavLiA: white;
 }
-* {transition: 1s; box-sizing: border-box;}
+*, * > * {transition: 1s; box-sizing: border-box;}
 body {margin: 0; padding: 0; background-color: var(--bodyBg);}
 .pageContent {padding: 15px;}
 
