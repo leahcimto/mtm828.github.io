@@ -12,7 +12,7 @@
     --ulTopNavLiA: white;
     --ulFooterBorderBottom: #ccc;
     --ulFooterLiA: blue;
-    loadingScreenBg: #cccccc;
+    --loadingScreenBg: #cccccc;
 }
 .darkMode {
     --bodyBg: black;
