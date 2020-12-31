@@ -14,7 +14,7 @@
     --ulFooterLiA: blue;
     --loadingScreenBg: #cccccc;
 }
-.darkMode, .darkMode > * {
+.darkMode {
     --bodyBg: black;
     --p: white;
     --a: orange;
@@ -30,14 +30,14 @@
     --ulFooterLiA: orange;
     --loadingScreenBg: #333333;
 }
-body > *:hover {
+html > *:hover {
     --a: red;
     --button: white;
     --buttonBg: #333;
     --ulTopNavLiBg: #333;
     --ulTopnavLiA: black;
 }
-body > *.darkMode:hover {
+html > .darkMode:hover {
     --a: green;
     --button: black;
     --buttonBg: #ccc;
@@ -190,7 +190,7 @@ ul.footer li a {
     text-align: center;
 }
 
-html > * {
+html {
     transition: 1s;
     box-sizing:border-box;
 }
