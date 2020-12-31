@@ -30,19 +30,23 @@
     --ulFooterLiA: orange;
     --loadingScreenBg: #333333;
 }
-html > *:hover {
-    --a: red;
-    --button: white;
-    --buttonBg: #333;
-    --ulTopNavLiBg: #333;
-    --ulTopnavLiA: black;
+html > * {
+    :hover {
+        --a: red;
+        --button: white;
+        --buttonBg: #333;
+        --ulTopNavLiBg: #333;
+        --ulTopnavLiA: black;
+    }
 }
-html > .darkMode:hover {
-    --a: green;
-    --button: black;
-    --buttonBg: #ccc;
-    --ulTopNavLiBg: #ccc;
-    --ulTopnavLiA: white;
+html > .darkMode {
+    :hover {
+        --a: green;
+        --button: black;
+        --buttonBg: #ccc;
+        --ulTopNavLiBg: #ccc;
+        --ulTopnavLiA: white;
+    }
 }
 
 body {
@@ -190,7 +194,7 @@ ul.footer li a {
     text-align: center;
 }
 
-html {
+html > * {
     transition: 1s;
     box-sizing:border-box;
 }
