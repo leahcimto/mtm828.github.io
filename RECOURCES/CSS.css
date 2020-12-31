@@ -31,6 +31,11 @@
     --loadingScreenBg: #333333;
 }
 html > * {
+    
+
+html > * {
+    transition: 1s;
+    box-sizing:border-box;
     :hover {
         --a: red;
         --button: white;
