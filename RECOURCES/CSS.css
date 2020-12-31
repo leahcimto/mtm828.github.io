@@ -31,25 +31,24 @@
     --loadingScreenBg: #333333;
 }   
 
-html > * {
-    transition: 1s;
-    box-sizing:border-box;
-    :hover {
-        --a: red;
-        --button: white;
-        --buttonBg: #333;
-        --ulTopNavLiBg: #333;
-        --ulTopnavLiA: black;
-    }
+bosy > *:hover {
+    --a: red;
+    --button: white;
+    --buttonBg: #333;
+    --ulTopNavLiBg: #333;
+    --ulTopnavLiA: black;
 }
-html > .darkMode {
-    :hover {
-        --a: green;
-        --button: black;
-        --buttonBg: #ccc;
-        --ulTopNavLiBg: #ccc;
-        --ulTopnavLiA: white;
-    }
+.darkMode:hover {
+    --a: green;
+    --button: black;
+    --buttonBg: #ccc;
+    --ulTopNavLiBg: #ccc;
+    --ulTopnavLiA: white;
+}
+
+* {
+    transition: 1s;
+    border-sizing: border-box;
 }
 
 body {
