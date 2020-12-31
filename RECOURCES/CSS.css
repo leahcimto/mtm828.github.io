@@ -31,7 +31,7 @@
     --loadingScreenBg: #333333;
 }   
 
-bosy > *:hover {
+body > *:hover {
     --a: red;
     --button: white;
     --buttonBg: #333;
@@ -57,24 +57,11 @@ body {
     background-color: var(--bodyBg);
 }
 
-.pageContent {
-    box-sizing: border-box;
-    padding: 15px;
-}
+.pageContent {padding: 15px;}
 
-p, a {
-    font-size: 150%;
-    font-family: 'alata';
-}
-
-p {
-    color: var(--p);
-}
-
-a {
-    text-decoration: none !important;
-    color: var(--a);
-}
+p, a {font-size: 150%; font-family: 'alata';}
+p {color: var(--p);}
+a {text-decoration: none !important; color: var(--a);}
 
 h1, h2, h3, h4, h5, h6 {
     color: var(--h);
@@ -83,14 +70,8 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 135%;
 }
 
-.jumbotron {
-    background-color: var(--jumbotronBg);
-    border-radius: 10px;
-}
-.jumbotron * {
-    margin: 0px;
-    padding: 10px;
-}
+.jumbotron {background-color: var(--jumbotronBg);}
+.jumbotron > * {margin: 0px; padding: 10px;}
 
 button {
     background-color: var(--buttonBg);
@@ -98,9 +79,10 @@ button {
     outline: none;
     border: none;
     margin: 0px;
-    padding: 5px;
+    padding: 10px;
     border-radius: 5px;
-    font-size: 175%;
+    font-size: 150%;
+    font-family: courier-new;
 }
 
 ul.topNav {
@@ -123,7 +105,6 @@ ul.topNav li {
     padding: 10px;
     line-height: 50px;
 }
-
 ul.topNav li a {
     color: var(--ulTopNavLiA);
     padding: 14px;
@@ -140,7 +121,7 @@ ul.topNav li a {
     horizontal-align: middle;
 }
 .sticky + .pageContent {
-    padding-top: 125px;
+    padding-top: 130px;
 }
 
 .switch {
@@ -194,9 +175,4 @@ ul.footer li a {
     display: inline-block;
     margin: 10px;
     text-align: center;
-}
-
-html > * {
-    transition: 1s;
-    box-sizing:border-box;
 }
