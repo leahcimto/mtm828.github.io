@@ -45,18 +45,8 @@ body > *:hover {
     --ulTopNavLiBg: #ccc;
     --ulTopnavLiA: white;
 }
-
-* {
-    transition: 1s;
-    border-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    background-color: var(--bodyBg);
-}
-
+* {transition: 1s; box-sizing: border-box;}
+body {margin: 0; padding: 0; background-color: var(--bodyBg);}
 .pageContent {padding: 15px;}
 
 p, a {font-size: 150%; font-family: 'alata';}
