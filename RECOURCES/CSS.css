@@ -31,7 +31,7 @@
     --loadingScreenBg: #333333;
 }   
 
-:is(*,*>*,*>*>*,*>*>*>*,*>*>*>*>*):hover {
+.pageContent > *:hover, ul.topNav > *:hover {
     --a: red;
     --button: white;
     --buttonBg: #333;
