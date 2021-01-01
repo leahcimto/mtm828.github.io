@@ -31,7 +31,7 @@
     --loadingScreenBg: #333333;
 }   
 
-*:hover, * > *:hover {
+.elm:hover {
     --a: red;
     --button: white;
     --buttonBg: #333;
