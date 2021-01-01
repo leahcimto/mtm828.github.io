@@ -62,6 +62,10 @@
             ajax.send();
         }
         window.onload = function() {
+            document.body.classList.toggle("elm");
+            for (i=0; i<document.body.querySelectorAll("*").length; i++) {
+                document.body.querySelectorAll("*")[i].classList.toggle("elm");
+            }
             hideLoadingScreen();
             initDesc();
         }
