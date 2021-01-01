@@ -31,7 +31,13 @@
     --loadingScreenBg: #333333;
 }   
 
-:is(*):hover {
+is(
+*,
+* > *,
+* > * > *,
+* > * > * > *,
+* > * > * > * > *
+):hover {
     --a: red;
     --button: white;
     --buttonBg: #333;
