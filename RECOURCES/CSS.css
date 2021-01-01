@@ -12,7 +12,9 @@
     --ulTopNavLiA: white;
     --ulFooterBorderTop: #ccc;
     --ulFooterLiA: blue;
-    --loadingScreenBg: #cccccc;
+    --loadingScreenBg: white;
+    --loader: #ccc;
+    --loaderTop: dodgerblue;
 }
 .darkMode {
     --bodyBg: black;
@@ -28,7 +30,9 @@
     --ulTopNavLiA: black;
     --ulFooterBorderTop: #333;
     --ulFooterLiA: orange;
-    --loadingScreenBg: #333333;
+    --loadingScreenBg: black;
+    --loader: #333;
+    --loaderTop: crimson;
 }   
 
 .pageContent > *:hover, ul.topNav > *:hover {
