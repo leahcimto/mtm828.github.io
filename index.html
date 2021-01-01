@@ -62,9 +62,7 @@
             ajax.send();
         }
         window.onload = function() {
-            setTimeout(1000);
-            hideLoadingScreen();
-            initDesc();
+            setTimeout(function() {hideLoadingScreen(); initDesc();}, 1000);
         }
     </script>
 </html>
