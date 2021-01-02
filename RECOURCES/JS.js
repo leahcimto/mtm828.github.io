@@ -6,7 +6,7 @@ function toggleDarkMode() {
     var elements = document.querySelectorAll("*");
     var i;
     for (i=0; i<elements.length; i++) {
-        if (switchState) {elements[i].classList.add("darkMode");} else {elements[i].classlist.remove("darkMode");}
+        if (switchState) {elements[i].classList.add("darkMode");} else {elements[i].classList.remove("darkMode");}
     }
     if (!switchState) {
         localStorage.setItem("darkMode", "true");
