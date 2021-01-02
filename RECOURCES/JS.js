@@ -12,11 +12,10 @@ function toggleDarkMode() {
         window.localStorage.setItem("darkMode", "false");
     }
 }
-if (window.localStorage.getItem("darkMode") == undefined) {
+if (window.localStorage == null) {
     window.localStorage.setItem("darkMode", "false");
 }
 if (window.localStorage.getItem("darkMode") == "true") {
     document.getElementById("darkModeSwitch").checked = true;
-    window.localStorage.setItem("darkMode", "true");
     toggleDarkMode();
 }
