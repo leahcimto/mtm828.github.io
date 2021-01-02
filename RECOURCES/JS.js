@@ -1,24 +1,14 @@
 var i;
 var storage = window.localStorage;
 
-window.onscroll = function(){updateTopNavbar()};
-var navbar = document.getElementById("topNav");
-var sticky = navbar.offsetTop;
-function updateTopNavbar() {
-    if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-    } else {
-        navbar.classList.remove("sticky");
-    }
-}
-
 function toggleDarkMode() {
+    var switchState = document.getElementById("darkModeSwitch").checked;
     var elements = document.querySelectorAll("*");
     var i;
     for (i=0; i<elements.length; i++) {
-        elements[i].classList.toggle("darkMode");
+        if (switchState) {elements[i].classList.add("darkMode");} else {elements[i].classlist.remove("darkMode");}
     }
-    if (localStorage.getItem("darkMode") == "false") {
+    if (!switchState) {
         localStorage.setItem("darkMode", "true");
     } else {
         localStorage.setItem("darkMode", "false");
