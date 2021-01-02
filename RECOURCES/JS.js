@@ -1,5 +1,4 @@
 var i;
-var storage = window.localStorage;
 
 function toggleDarkMode() {
     var switchState = document.getElementById("darkModeSwitch").checked;
@@ -8,16 +7,16 @@ function toggleDarkMode() {
         if (switchState) {elements[i].classList.remove("darkMode");} else {elements[i].classList.add("darkMode");}
     }
     if (!switchState) {
-        localStorage.setItem("darkMode", "true");
+        window.localStorage.setItem("darkMode", "true");
     } else {
-        localStorage.setItem("darkMode", "false");
+        window.localStorage.setItem("darkMode", "false");
     }
 }
-if (localStorage.getItem("darkMode") == undefined) {
-    localStorage.setItem("darkMode", "false");
+if (window.localStorage.getItem("darkMode") == undefined) {
+    window.localStorage.setItem("darkMode", "false");
 }
-if (localStorage.getItem("darkMode") == "true") {
+if (window.localStorage.getItem("darkMode") == "true") {
     document.getElementById("darkModeSwitch").checked = true;
-    localStorage.setItem("darkMode", "true");
+    window.localStorage.setItem("darkMode", "true");
     toggleDarkMode();
 }
