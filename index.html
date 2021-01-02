@@ -60,6 +60,11 @@
             ajax.send();
         }
         window.onload = function() {
+            if (localStorage.getItem("darkMode") == "true") {
+                document.getElementById("darkModeSwitch").checked = true;
+                localStorage.setItem("darkMode", "true");
+                toggleDarkMode();
+            }
             setTimeout(function() {hideLoadingScreen(); initDesc();}, 1000);
         }
     </script>
