@@ -18,6 +18,6 @@ if (localStorage.getItem("darkMode") == undefined) {
 }
 if (localStorage.getItem("darkMode") == "true") {
     document.getElementById("darkModeSwitch").checked = true;
-    //localStorage.setItem("darkMode", "true");
+    localStorage.setItem("darkMode", "true");
     toggleDarkMode();
 }
