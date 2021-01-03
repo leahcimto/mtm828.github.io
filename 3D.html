@@ -57,26 +57,8 @@ function main() {
     makeInstance(geometry, 0xaa8844,  2),
   ];
 
-  function resizeRendererToDisplaySize(renderer) {
-    const canvas = renderer.domElement;
-    const pixelRatio = window.devicePixelRatio;
-    const width  = canvas.clientWidth  * pixelRatio | 0;
-    const height = canvas.clientHeight * pixelRatio | 0;
-    const needResize = canvas.width !== width || canvas.height !== height;
-    if (needResize) {
-      renderer.setSize(width, height, false);
-    }
-    return needResize;
-  }
-
   function render(time) {
-    time *= 0.001;
-
-    if (resizeRendererToDisplaySize(renderer)) {
-      const canvas = renderer.domElement;
-      camera.aspect = canvas.clientWidth / canvas.clientHeight;
-      camera.updateProjectionMatrix();
-    }
+    time *= 0.001;  // convert time to seconds
 
     cubes.forEach((cube, ndx) => {
       const speed = 1 + ndx * .1;
@@ -89,8 +71,8 @@ function main() {
 
     requestAnimationFrame(render);
   }
-
   requestAnimationFrame(render);
+
 }
 
 main();
