@@ -17,15 +17,12 @@ if (window.localStorage == null) {
 }
 if (window.localStorage.getItem("darkMode") == "true") {
     document.getElementById("darkModeSwitch").checked = true;
-    toggleDarkMode();
 }
+toggleDarkMode();
 
 function hideLoadingScreen() {
-
     var screen = document.getElementById("loadingScreen");
-
     screen.style.display = "none";
-
 }
 
 function initDesc() {
