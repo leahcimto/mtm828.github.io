@@ -1,4 +1,8 @@
-:root {
+* {transition: 1s; box-sizing: border-box; margin: 0; padding: 0;}
+body {margin: 0; padding: 0; background-color: var(--bodyBg); width: 100%; height: 100%;}
+.pageContent {padding: 15px;}
+
+* {
     --bodyBg: white;
     --p: black;
     --a: blue;
@@ -16,7 +20,7 @@
     --loader: #ccc;
     --loaderTop: dodgerblue;
 }
-.darkMode {
+*.darkMode {
     --bodyBg: black;
     --p: white;
     --a: orange;
@@ -35,49 +39,35 @@
     --loaderTop: crimson;
 }   
 
-.pageContent > *:hover, ul.topNav > *:hover {
+*:hover {
     --a: red;
     --button: white;
     --buttonBg: #333;
     --ulTopNavLiBg: #333;
     --ulTopnavLiA: black;
 }
-.darkMode:hover {
+*.darkMode:hover {
     --a: green;
     --button: black;
     --buttonBg: #ccc;
     --ulTopNavLiBg: #ccc;
     --ulTopnavLiA: white;
 }
-* {transition: 1s; box-sizing: border-box;}
-body {margin: 0; padding: 0; background-color: var(--bodyBg);}
-.pageContent {padding: 15px;}
 
+//
 p, a {font-size: 150%; font-family: 'alata';}
 p {color: var(--p);}
 a {text-decoration: none !important; color: var(--a);}
+a:visited {text-decoration: underline;}
+a:active {text-decoration: underline;}
 
-h1, h2, h3, h4, h5, h6 {
-    color: var(--h);
-    border-bottom: 1px solid var(--hBorderBottom);
-    font-family: 'alata';
-    font-size: 135%;
-}
+h1, h2, h3, h4, h5, h6 {color: var(--h); border-bottom: 1px solid var(--hBorderBottom); font-family: 'alata'; font-size: 150%;}
 
 .jumbotron {background-color: var(--jumbotronBg);}
-.jumbotron > * {margin: 0px; padding: 10px;}
+.jumbotron > * {padding: 10px;}
 
-button {
-    background-color: var(--buttonBg);
-    color: var(--button);
-    outline: none;
-    border: none;
-    margin: 0px;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 150%;
-    font-family: courier-new;
-}
+button {background-color: var(--buttonBg); color: var(--button); outline: none; border: none; margin: 0px; padding: 10px; border-radius: 5px; font-size: 150%; font-family: courier-new;}
+//
 
 ul.topNav {
     padding: 0;
@@ -85,13 +75,10 @@ ul.topNav {
     background-color: var(--ulTopNav);
     display: inline-block;
     position: sticky;
-    position: -webkit-sticky;
     width: 100%;
-    min-width: 100%;
     box-sizing: content-box;
     list-style-type: none;
 }
-
 ul.topNav li {
     background-color: var(--ulTopNavLiBg);
     float: left;
@@ -104,59 +91,21 @@ ul.topNav li a {
     padding: 14px;
     font-size: 175%;
     display: block;
-    text-decoration: none;
+    text-decoration: none !important;
     text-align: center;
 }
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    vertical-align: middle;
-    horizontal-align: middle;
-}
-.sticky + .pageContent {
-    padding-top: 130px;
-}
 
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 75px;
-    height: 34px;
-}
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: white;
-    border-radius: 34px;
-    transform: translateY(20%);
-}
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: black;
-}
+.switch { position: relative; display: inline-block; width: 75px; height: 34px;}
+.switch input {opacity: 0; width: 0; height: 0;}
+.slider {position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: white; border-radius: 34px; transform: translateY(20%);}
+.slider::before {position: absolute; content: ""; height: 26px; width: 26px; left: 4px; bottom: 4px; background-color: black; border-radius: 50%; transition: 1s;}
 input:checked + .slider {background-color: black;}
 input:checked + .slider::before {background-color: white; transform: translateX(40px);}
-.slider::before {border-radius: 50%;transition: 1s;}
 
 ul.footer {
     display: inline-block;
     width: 100%;
-    border-top: var(--ulFooterBorderTop);
+    border-top: 1px solid var(--ulFooterBorderTop);
     overflow: hidden;
 }
 ul.footer li {
