@@ -54,7 +54,6 @@ body {margin: 0; padding: 0; background-color: var(--bodyBg); width: 100%; heigh
     --ulTopnavLiA: white;
 }
 
-//
 p, a {font-size: 150%; font-family: 'alata';}
 p {color: var(--p);}
 a {text-decoration: none !important; color: var(--a);}
@@ -67,9 +66,8 @@ h1, h2, h3, h4, h5, h6 {color: var(--h); border-bottom: 1px solid var(--hBorderB
 .jumbotron > * {padding: 10px;}
 
 button {background-color: var(--buttonBg); color: var(--button); outline: none; border: none; margin: 0px; padding: 10px; border-radius: 5px; font-size: 150%; font-family: courier-new;}
-//
 
-ul.topNav {
+.topNav {
     padding: 0;
     margin: 0;
     background-color: var(--ulTopNav);
@@ -79,14 +77,14 @@ ul.topNav {
     box-sizing: content-box;
     list-style-type: none;
 }
-ul.topNav li {
+.topNav li {
     background-color: var(--ulTopNavLiBg);
     float: left;
     display: block;
     padding: 10px;
     line-height: 50px;
 }
-ul.topNav li a {
+.topNav li a {
     color: var(--ulTopNavLiA);
     padding: 14px;
     font-size: 175%;
@@ -108,11 +106,11 @@ ul.footer {
     border-top: 1px solid var(--ulFooterBorderTop);
     overflow: hidden;
 }
-ul.footer li {
+.footer li {
     list-style-type: none;
     display: inline-block;
 }
-ul.footer li a {
+.footer li a {
     text-decoration: none !important;
     color: var(--ulFooterLiA);
     display: inline-block;
