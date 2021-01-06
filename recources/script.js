@@ -6,12 +6,11 @@ function toggleDarkMode() {
     for (i=0; i<elements.length; i++) {
         if (switchState) {elements[i].classList.remove("darkMode");} else {elements[i].classList.add("darkMode");}
     }
-    if (switchState == true) {
+    if (switchState) {
         window.localStorage.setItem("darkMode", "true");
     } else {
         window.localStorage.setItem("darkMode", "false");
     }
-}
 
 
 function hideLoadingScreen() {var screen = document.getElementById("loadingScreen"); screen.style.display = "none";}
@@ -34,12 +33,13 @@ function initDesc() {
     ajax.open("GET", "/recources/json/description.json", true);
     ajax.send();
 }
+
 window.onload = function () {
-    if (localStorage.getItem("darkMode") == "true") {
+    /*if (localStorage.getItem("darkMode") == "true") {
         document.getElementById("darkModeSwitch").checked = true;
         localStorage.setItem("darkMode", "true");
         toggleDarkMode();
-    }
+    }*/
     if (window.localStorage == null) {window.localStorage.setItem("darkMode", "false");}
     if (window.localStorage.getItem("darkMode") == "true") {
         document.getElementById("darkModeSwitch").checked = true;
