@@ -13,13 +13,6 @@ function toggleDarkMode() {
     }
 }
 
-if (window.localStorage == null) {window.localStorage.setItem("darkMode", "false");}
-if (window.localStorage.getItem("darkMode") == "true") {
-    document.getElementById("darkModeSwitch").checked = true;
-} else {
-    document.getElementById("darkModeSwitch").checked = false;
-}
-toggleDarkMode();
 
 function hideLoadingScreen() {var screen = document.getElementById("loadingScreen"); screen.style.display = "none";}
 
@@ -47,6 +40,13 @@ window.onload = function () {
         localStorage.setItem("darkMode", "true");
         toggleDarkMode();
     }
+    if (window.localStorage == null) {window.localStorage.setItem("darkMode", "false");}
+    if (window.localStorage.getItem("darkMode") == "true") {
+        document.getElementById("darkModeSwitch").checked = true;
+    } else {
+        document.getElementById("darkModeSwitch").checked = false;
+    }
+    toggleDarkMode();
     setTimeout(function () {
         hideLoadingScreen();
         initDesc();
