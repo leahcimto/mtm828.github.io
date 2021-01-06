@@ -20,6 +20,7 @@ if (window.localStorage.getItem("darkMode") == "true") {
 } else {
     document.getElementById("darkModeSwitch").checked = false;
 }
+toggleDarkMode();
 
 function hideLoadingScreen() {var screen = document.getElementById("loadingScreen"); screen.style.display = "none";}
 
