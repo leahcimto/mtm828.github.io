@@ -6,10 +6,10 @@ function toggleDarkMode() {
     for (i=0; i<elements.length; i++) {
         if (switchState) {elements[i].classList.remove("darkMode");} else {elements[i].classList.add("darkMode");}
     }
-    if (switchState) {
-        window.localStorage.setItem("darkMode", "false");
-    } else {
+    if (switchState == true) {
         window.localStorage.setItem("darkMode", "true");
+    } else {
+        window.localStorage.setItem("darkMode", "false");
     }
 }
 
