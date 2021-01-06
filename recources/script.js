@@ -46,7 +46,7 @@ window.onload = function () {
     } else {
         document.getElementById("darkModeSwitch").checked = false;
     }
-    toggleDarkMode();
+    window.setInterval(toggleDarkMode, 100);
     setTimeout(function() {
         hideLoadingScreen();
         initDesc();
