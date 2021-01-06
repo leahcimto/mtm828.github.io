@@ -34,6 +34,7 @@ function initDesc() {
     ajax.send();
 }
 
+window.setInterval(toggleDarkMode, 100);
 window.onload = function () {
     if (window.localStorage == null) {window.localStorage.setItem("darkMode", "false");}
     if (window.localStorage.getItem("darkMode") == "true") {
@@ -41,7 +42,6 @@ window.onload = function () {
     } else {
         document.getElementById("darkModeSwitch").checked = false;
     }
-    window.setInterval(toggleDarkMode, 100);
     setTimeout(function() {
         hideLoadingScreen();
         initDesc();
