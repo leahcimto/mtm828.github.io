@@ -11,7 +11,7 @@ function toggleDarkMode() {
     } else {
         window.localStorage.setItem("darkMode", "false");
     }
-
+}
 
 function hideLoadingScreen() {var screen = document.getElementById("loadingScreen"); screen.style.display = "none";}
 
