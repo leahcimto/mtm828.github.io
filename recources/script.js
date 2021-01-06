@@ -35,11 +35,6 @@ function initDesc() {
 }
 
 window.onload = function () {
-    /*if (localStorage.getItem("darkMode") == "true") {
-        document.getElementById("darkModeSwitch").checked = true;
-        localStorage.setItem("darkMode", "true");
-        toggleDarkMode();
-    }*/
     if (window.localStorage == null) {window.localStorage.setItem("darkMode", "false");}
     if (window.localStorage.getItem("darkMode") == "true") {
         document.getElementById("darkModeSwitch").checked = true;
