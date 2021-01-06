@@ -25,7 +25,7 @@ function initDesc() {
             desc.innerHTML = "<div style=\"text-align: center;\"><p style=\"font-family: abel;\">Hey there, I'm " + json.me.name + "!</p><br>";
             desc.innerHTML += "<p>I code in:</p><ul>"
             for (i = 0; i < json.me.knows.length; i++) {
-                desc.innerHTML += "<li style=\"transition: 0s;\">" + json.me.knows[i] + "</li>";
+                desc.innerHTML += "<li>" + json.me.knows[i] + "</li>";
             }
             desc.innerHTML += "</ul></div><br>"
         }
@@ -47,7 +47,7 @@ window.onload = function () {
         document.getElementById("darkModeSwitch").checked = false;
     }
     toggleDarkMode();
-    setTimeout(function () {
+    setTimeout(function() {
         hideLoadingScreen();
         initDesc();
     }, 1000);
