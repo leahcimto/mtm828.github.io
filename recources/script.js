@@ -12,20 +12,16 @@ function toggleDarkMode() {
         window.localStorage.setItem("darkMode", "false");
     }
 }
-if (window.localStorage == null) {
-    window.localStorage.setItem("darkMode", "false");
-}
-if (window.localStorage.getItem("darkMode") == "true") {
-    document.getElementById("darkModeSwitch").checked = false;
-} else {
-    document.getElementById("darkModeSwitch").checked = true;
-}
-toggleDarkMode();
 
-function hideLoadingScreen() {
-    var screen = document.getElementById("loadingScreen");
-    screen.style.display = "none";
+if (window.localStorage == null) {window.localStorage.setItem("darkMode", "false");}
+toggleDarkMode();
+if (window.localStorage.getItem("darkMode") == "true") {
+    document.getElementById("darkModeSwitch").checked = true;
+} else {
+    document.getElementById("darkModeSwitch").checked = false;
 }
+
+function hideLoadingScreen() {var screen = document.getElementById("loadingScreen"); screen.style.display = "none";}
 
 function initDesc() {
     ajax = new XMLHttpRequest();
