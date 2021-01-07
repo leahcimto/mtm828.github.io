@@ -1,4 +1,7 @@
 var i;
+var j;
+
+function sleep(dur) {return new Promise(resolve => setTimeout(resolve, dur));}
 
 function toggleDarkMode() {
     var switchState = document.getElementById("darkModeSwitch").checked;
@@ -23,7 +26,6 @@ window.onload = function () {
     } else {
         document.getElementById("darkModeSwitch").checked = false;
     }
-    setTimeout(function() {
-        hideLoadingScreen();
-    }, 2000);
+    sleep(2000);
+    hideLoadingScreen();
 }
