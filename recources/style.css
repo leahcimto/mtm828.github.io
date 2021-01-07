@@ -63,8 +63,7 @@ a:active {text-decoration: underline;}
 
 h1, h2, h3, h4, h5, h6 {color: var(--h); border-bottom: 1px solid var(--hBorderBottom); font-family: 'alata'; font-size: 150%;}
 
-ul {transition: 0s;}
-li {list-style-type: none; padding-left: 10px;}
+li {list-style-type: none; padding-left: 10px; transition: 0s;}
 
 .jumbotron {background-color: var(--jumbotronBg);}
 .jumbotron > * {padding: 10px;}
