@@ -17,13 +17,13 @@ function toggleDarkMode() {
 }
 
 window.setInterval(toggleDarkMode, 100);
-window.onload = function () {
+window.onload = function() {
     if (window.localStorage == null) {window.localStorage.setItem("darkMode", "false");}
     if (window.localStorage.getItem("darkMode") == "true") {
         document.getElementById("darkModeSwitch").checked = true;
     } else {
         document.getElementById("darkModeSwitch").checked = false;
     }
-    //sleep(2000);
+    sleep(2000);
     document.querySelector("#loadingScreen").style.display = "none";
 }
