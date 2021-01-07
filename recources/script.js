@@ -15,25 +15,6 @@ function toggleDarkMode() {
 
 function hideLoadingScreen() {var screen = document.getElementById("loadingScreen"); screen.style.display = "none";}
 
-function initDesc() {
-    ajax = new XMLHttpRequest();
-    ajax.responceType = "json";
-    ajax.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-            var json = JSON.parse(JSON.parse(JSON.stringify(this.responseText)));
-            desc = document.getElementById("description");
-            desc.innerHTML = "<div style=\"text-align: center;\"><p style=\"font-family: abel;\">Hey there, I'm " + json.me.name + "!</p><br>";
-            desc.innerHTML += "<p>I code in:</p><ul>"
-            for (i = 0; i < json.me.knows.length; i++) {
-                desc.innerHTML += "<li>" + json.me.knows[i] + "</li>";
-            }
-            desc.innerHTML += "</ul></div><br>"
-        }
-    }
-    ajax.open("GET", "/recources/json/description.json", true);
-    ajax.send();
-}
-
 window.setInterval(toggleDarkMode, 100);
 window.onload = function () {
     if (window.localStorage == null) {window.localStorage.setItem("darkMode", "false");}
@@ -44,6 +25,5 @@ window.onload = function () {
     }
     setTimeout(function() {
         hideLoadingScreen();
-        initDesc();
     }, 2000);
 }
