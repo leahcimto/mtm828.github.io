@@ -73,6 +73,7 @@ button {background-color: var(--buttonBg); color: var(--button); outline: none; 
     background-color: var(--ulTopNav);
     display: inline-block;
     position: sticky;
+    top: 0;
     width: 100%;
     box-sizing: content-box;
     list-style-type: none;
