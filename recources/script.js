@@ -22,5 +22,5 @@ window.onload = function() {
     } else {
         document.getElementById("darkModeSwitch").checked = false;
     }
-    setTimeOut(function() {document.querySelector("#loadingScreen").style.display = "none";}, 2000)
+    setTimeout(function() {document.querySelector("#loadingScreen").style.display = "none";}, 2000)
 }
