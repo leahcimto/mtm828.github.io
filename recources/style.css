@@ -54,6 +54,7 @@ body {margin: 0; padding: 0; background-color: var(--bodyBg); width: 100%; heigh
     --ulTopnavLiA: white;
 }
 
+/**/
 p, a {font-size: 150%; font-family: 'alata';}
 p {color: var(--p);}
 a {text-decoration: none !important; color: var(--a);}
@@ -62,10 +63,14 @@ a:active {text-decoration: underline;}
 
 h1, h2, h3, h4, h5, h6 {color: var(--h); border-bottom: 1px solid var(--hBorderBottom); font-family: 'alata'; font-size: 150%;}
 
+ul {transition: 0s;}
+li {list-style-type: none; padding-left: 10px;}
+
 .jumbotron {background-color: var(--jumbotronBg);}
 .jumbotron > * {padding: 10px;}
 
 button {background-color: var(--buttonBg); color: var(--button); outline: none; border: none; margin: 0px; padding: 10px; border-radius: 5px; font-size: 150%; font-family: courier-new;}
+/**/
 
 .topNav {
     padding: 0;
