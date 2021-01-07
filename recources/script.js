@@ -1,8 +1,6 @@
 var i;
 var j;
 
-function sleep(dur) {return new Promise(resolve => setTimeout(resolve, dur));}
-
 function toggleDarkMode() {
     var switchState = document.getElementById("darkModeSwitch").checked;
     var elements = document.querySelectorAll("*");
