@@ -16,8 +16,6 @@ function toggleDarkMode() {
     }
 }
 
-function hideLoadingScreen() {var screen = document.querySelector("loadingScreen"); screen.style.display = "none";}
-
 window.setInterval(toggleDarkMode, 100);
 window.onload = function () {
     if (window.localStorage == null) {window.localStorage.setItem("darkMode", "false");}
@@ -27,5 +25,5 @@ window.onload = function () {
         document.getElementById("darkModeSwitch").checked = false;
     }
     sleep(2000);
-    hideLoadingScreen();
+    document.querySelector("#loadingScreen").style.display = "none";
 }
