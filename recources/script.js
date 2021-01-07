@@ -45,5 +45,5 @@ window.onload = function () {
     setTimeout(function() {
         hideLoadingScreen();
         initDesc();
-    }, 1000);
+    }, 2000);
 }
