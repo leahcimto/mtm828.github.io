@@ -36,13 +36,17 @@
         ajax.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
                 var json = JSON.parse(JSON.parse(JSON.stringify(this.responseText)));
+
                 desc = document.getElementById("description");
-                desc.innerHTML = "<div style=\"text-align: center;\"><p style=\"font-family: abel;\">Hey there, I'm " + json.me.name + "!</p><br>";
+                desc.innerHTML = "";
+
+                desc.innerHTML += "<div style=\"text-align: center;\"><p style=\"font-family: abel;\">Hey there, I'm " + json.properties.name + "!</p><br>";
                 desc.innerHTML += "<p>I code in:</p><ul>"
-                for (i = 0; i < json.me.knows.length; i++) {
-                    desc.innerHTML += "<li>" + json.me.knows[i] + "</li>";
+                for (i = 0; i < json.properties.langs.length; i++) {
+                    desc.innerHTML += "<li>" + json.properties.langs[i] + "</li>";
                 }
                 desc.innerHTML += "</ul></div><br>"
+
             }
         }
         ajax.open("GET", "https://mtm828.github.io/recources/json/description.json", true);
