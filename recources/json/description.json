@@ -1,26 +1,26 @@
 {
-    properties: {
-        name: "MTM828",
-        statusIcon: "😑",
-        statusText: "Alive.",
-        langs: ["HTML", "CSS", "JavaScript", "Python", "C++", "Java"],
-        learning: [],
-        inProggress: ["my site", "a few C++ programs"],
-        otherAccs: [
-            {name: "Scratch", link: "scratch.mit.edu/users/MTM828"},
+    "properties": {
+        "name": "MTM828",
+        "statusIcon": "😑",
+        "statusText": "Alive.",
+        "langs": ["HTML", "CSS", "JavaScript", "Python", "C++", "Java"],
+        "learning": [],
+        "inProggress": ["my site", "a few C++ programs"],
+        "otherAccs": [
+            {"name": "Scratch", "link": "scratch.mit.edu/users/MTM828"},
         ],
     },
-    likes: [
-        {name: "GitHub", reason: "Idk."},
+    "likes": [
+        {"name": "GitHub", "reason": "Idk."},
     ],
-    hates: [
-        {name: "Stack Overflow", reason: "Stack Overflow's rules are just really cringy, and the community is even cringier."},
-        {name: "Scratch", reason: "THE LAAAG!!!"},
+    "hates": [
+        {"name": "Stack Overflow", "reason": "Stack Overflow's rules are just really cringy, and the community is even cringier."},
+        {"name": "Scratch", "reason": "THE LAAAG!!!"},
     ],
-    projects: [
+    "projects": [
         {
-            lang: "Scratch",
-            projects: [
+            "lang": "Scratch",
+            "projects": [
                 "<iframe src=\"https://scratch.mit.edu/projects/445582283/embed\" allowtransparency=\"true\" width=\"485\" height=\"402\" frameborder=\"0\" scrolling=\"no\" allowfullscreen></iframe>",
                 "<iframe src=\"https://scratch.mit.edu/projects/429561174/embed\" allowtransparency=\"true\" width=\"485\" height=\"402\" frameborder=\"0\" scrolling=\"no\" allowfullscreen></iframe>",
                 "<iframe src=\"https://scratch.mit.edu/projects/455644795/embed\" allowtransparency=\"true\" width=\"485\" height=\"402\" frameborder=\"0\" scrolling=\"no\" allowfullscreen></iframe>",
