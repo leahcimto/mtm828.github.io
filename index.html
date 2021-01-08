@@ -3,7 +3,6 @@
     <head>
         <title>MTM828 - Home</title>
         <link rel="shortcut icon" href="https://mtm828.github.io/recourses/img/profilePicture.png">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel|Alata">
         <link rel="stylesheet" href="https://mtm828.github.io/recources/style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="keywords" content="mtm828, github, developer">
@@ -40,7 +39,7 @@
                 desc = document.getElementById("description");
                 desc.innerHTML = "";
 
-                desc.innerHTML += "<div style=\"text-align: center;\"><p style=\"font-family: abel;\">Hey there, I'm " + json.properties.name + "!</p><br>";
+                desc.innerHTML += "<div style=\"text-align: center;\"><p style=\"font-family: 'raleway';\">Hey there, I'm " + json.properties.name + "!</p><br>";
                 desc.innerHTML += "<p>I code in:</p><ul>"
                 for (i = 0; i < json.properties.langs.length; i++) {
                     desc.innerHTML += "<li>" + json.properties.langs[i] + "</li>";
