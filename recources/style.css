@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
 * {transition: 1s; box-sizing: border-box; margin: 0; padding: 0;}
-body {margin: 0; padding: 0; background-color: var(--bodyBg); width: 100%; height: 100%; font-family: 'arial';}
+body {margin: 0; padding: 0; background-color: var(--bodyBg); width: 100%; height: 100%; font-family: 'montserrat';}
 .pageContent {padding: 15px;}
 
 * {
