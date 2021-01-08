@@ -1,5 +1,5 @@
 * {transition: 1s; box-sizing: border-box; margin: 0; padding: 0;}
-body {margin: 0; padding: 0; background-color: var(--bodyBg); width: 100%; height: 100%;}
+body {margin: 0; padding: 0; background-color: var(--bodyBg); width: 100%; height: 100%; font-family: 'arial';}
 .pageContent {padding: 15px;}
 
 * {
@@ -84,20 +84,20 @@ body {margin: 0; padding: 0; background-color: var(--bodyBg); width: 100%; heigh
 }
 
 /**/
-p, a {font-size: 150%; font-family: 'alata';}
+p, a {font-size: 150%;}
 p {color: var(--p);}
 a {text-decoration: none !important; color: var(--a);}
 a:visited {text-decoration: underline;}
 a:active {text-decoration: underline;}
 
-h1, h2, h3, h4, h5, h6 {color: var(--h); border-bottom: 1px solid var(--hBorderBottom); font-family: 'alata'; font-size: 150%;}
+h1, h2, h3, h4, h5, h6 {color: var(--h); border-bottom: 1px solid var(--hBorderBottom); font-size: 150%;}
 
 li {list-style-type: none; padding-left: 10px; transition: 0s;}
 
 .jumbotron {background-color: var(--jumbotronBg);}
 .jumbotron > * {padding: 10px;}
 
-button {background-color: var(--buttonBg); color: var(--button); outline: none; border: none; margin: 0px; padding: 10px; border-radius: 5px; font-size: 150%; font-family: courier-new;}
+button {background-color: var(--buttonBg); color: var(--button); outline: none; border: none; margin: 0px; padding: 10px; border-radius: 5px; font-size: 150%; font-family: 'courier new';}
 /**/
 
 .topNav {
