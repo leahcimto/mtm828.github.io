@@ -42,7 +42,7 @@
                 desc.innerHTML += "<p style=\"font-family: 'raleway'; text-align: center;\">Hey there, I'm " + json.properties.name + "!</p><br>";
                 desc.innerHTML += "<p>I code in "
                 for (i = 0; i < json.properties.langs.length; i++) {
-                    if (i < json.properties.langs.length - 1) {desc.innerHTML += json.properties.langs[i] + " and ";} else if (i == json.properties.langs.length) {desc.innerHTML += json.properties.langs[i];} else {desc.innerHTML += json.properties.langs[i] + ", ";}
+                    if (i < json.properties.langs.length - 1) {desc.innerHTML += json.properties.langs[i] + ", ";} else if (i == json.properties.langs.length) {desc.innerHTML += json.properties.langs[i];} else {desc.innerHTML += json.properties.langs[i] + " and ";}
                 }
                 desc.innerHTML += "</p><br>"
 
