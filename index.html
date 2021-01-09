@@ -37,7 +37,7 @@
                 var json = JSON.parse(JSON.parse(JSON.stringify(this.responseText)));
 
                 desc = document.getElementById("description");
-                var descContent;
+                var descContent = "";
 
                 descContent += "<p style=\"font-family: 'raleway'; text-align: center;\">Hey there, I'm " + json.properties.name + "!</p><br>";
                 descContent += "<p>I code in "
@@ -45,14 +45,14 @@
                     if (i < json.properties.langs.length - 1) {
                         descContent += json.properties.langs[i] + ", ";
                     } else if (i == json.properties.langs.length - 1) {
-                        descContent += json.properties.langs[i] + " and ";
+                        " and " + descContent += json.properties.langs[i];
                     } else {
                         descContent += json.properties.langs[i];
                     }
                 }
                 descContent += ".</p><br>";
 
-                desc.innerHTML = descContent;
+                desc.innerHTML = descContent.toString();
             }
         }
         ajax.open("GET", "https://mtm828.github.io/recources/json/description.json", true);
