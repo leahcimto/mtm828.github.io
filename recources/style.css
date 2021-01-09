@@ -14,7 +14,7 @@ body {margin: 0; padding: 0; background-color: var(--bodyBg); width: 100%; heigh
     --jumbotronBg: #cccccc;
     --button: black;
     --buttonBg: #cccccc;
-    --ulTopNav: rgba(240, 240, 240, 0.5);
+    --ulTopNav: #cccccc;
     --ulTopNavLiBg: dodgerblue;
     --ulTopNavLiA: white;
     --ulFooterBorderTop: #ccc;
@@ -32,7 +32,7 @@ body {margin: 0; padding: 0; background-color: var(--bodyBg); width: 100%; heigh
     --jumbotronBg: #333333;
     --button: white;
     --buttonBg: #333333;
-    --ulTopNav: /*rgba(15, 15, 15, 0.5)*/green;
+    --ulTopNav: #cccccc;
     --ulTopNavLiBg: crimson;
     --ulTopNavLiA: black;
     --ulFooterBorderTop: #333333;
@@ -114,6 +114,7 @@ button {background-color: var(--buttonBg); color: var(--button); outline: none; 
     width: 100%;
     box-sizing: content-box;
     list-style-type: none;
+    opacity: 0.5;
 }
 .topNav li {
     background-color: var(--ulTopNavLiBg);
