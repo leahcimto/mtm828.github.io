@@ -8,7 +8,7 @@ body {margin: 0; padding: 0; background-color: var(--bodyBg); width: 100%; heigh
 * {
     --bodyBg: white;
     --p: black;
-    --a: blue;
+    --a: dodgerblue;
     --h: black;
     --hBorderBottom: #cccccc;
     --jumbotronBg: #cccccc;
@@ -26,7 +26,7 @@ body {margin: 0; padding: 0; background-color: var(--bodyBg); width: 100%; heigh
 *.darkMode {
     --bodyBg: black;
     --p: white;
-    --a: orange;
+    --a: crimson;
     --h: white;
     --hBorderBottom: #333333;
     --jumbotronBg: #333333;
@@ -43,18 +43,16 @@ body {margin: 0; padding: 0; background-color: var(--bodyBg); width: 100%; heigh
 }   
 
 *:hover {
-    --a: red;
+    --a: #0074e4;
     --button: white;
     --buttonBg: #333333;
     --ulTopNavLiBg: #0074e4;
-    --ulTopnavLiA: black;
 }
 *.darkMode:hover {
-    --a: green;
+    --a: #b01030;
     --button: black;
     --buttonBg: #cccccc;
     --ulTopNavLiBg: #b01030;
-    --ulTopnavLiA: white;
 }
 
 #loadingScreen {
