@@ -114,7 +114,6 @@ button {background-color: var(--buttonBg); color: var(--button); outline: none; 
     width: 100%;
     box-sizing: content-box;
     list-style-type: none;
-    opacity: 0.5;
 }
 .topNav li {
     background-color: var(--ulTopNavLiBg);
