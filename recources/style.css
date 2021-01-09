@@ -87,15 +87,16 @@ body {margin: 0; padding: 0; background-color: var(--bodyBg); width: 100%; heigh
 }
 
 /**/
-p, a {font-size: 150%;}
+p, a {font-size: 40px;}
 p {color: var(--p);}
 a {text-decoration: none !important; color: var(--a);}
 a:visited {text-decoration: underline;}
 a:active {text-decoration: underline;}
 
-h1, h2, h3, h4, h5, h6 {color: var(--h); border-bottom: 1px solid var(--hBorderBottom); font-size: 150%;}
+h1, h2, h3, h4, h5, h6 {color: var(--h); border-bottom: 1px solid var(--hBorderBottom); font-size: 65px;}
 
-li {list-style-type: none; padding-left: 10px; transition: 0s;}
+li {list-style-type: none; padding-left: 10px; transition: 0s; font-size: 30px;}
+ul {font-size: 50px;}
 
 .jumbotron {background-color: var(--jumbotronBg);}
 .jumbotron > * {padding: 10px;}
