@@ -14,14 +14,14 @@ body {margin: 0; padding: 0; background-color: var(--bodyBg); width: 100%; heigh
     --jumbotronBg: #cccccc;
     --button: black;
     --buttonBg: #cccccc;
-    --ulTopNav: rgba(255, 255, 255, 0.5);
-    --ulTopNavLiBg: #006600;
+    --ulTopNav: rgba(240, 240, 240, 0.5);
+    --ulTopNavLiBg: dodgerblue;
     --ulTopNavLiA: white;
     --ulFooterBorderTop: #ccc;
     --ulFooterLiA: blue;
     --loadingScreenBg: white;
     --loader: #cccccc;
-    --loaderTop: #009999;
+    --loaderTop: dodgerblue;
 }
 *.darkMode {
     --bodyBg: black;
@@ -32,14 +32,14 @@ body {margin: 0; padding: 0; background-color: var(--bodyBg); width: 100%; heigh
     --jumbotronBg: #333333;
     --button: white;
     --buttonBg: #333333;
-    --ulTopNav: white;
-    --ulTopNavLiBg: #008000;
+    --ulTopNav: rgba(15, 15, 15, 0.5);
+    --ulTopNavLiBg: crimson;
     --ulTopNavLiA: black;
     --ulFooterBorderTop: #333333;
     --ulFooterLiA: orange;
     --loadingScreenBg: black;
     --loader: #333333;
-    --loaderTop: #990000;
+    --loaderTop: crimson;
 }   
 
 *:hover {
