@@ -40,11 +40,11 @@
                 desc.innerHTML = "";
 
                 desc.innerHTML += "<div style=\"text-align: center;\"><p style=\"font-family: 'raleway';\">Hey there, I'm " + json.properties.name + "!</p><br>";
-                desc.innerHTML += "<p>I code in:</p><ul>"
+                desc.innerHTML += "<p>I code in "
                 for (i = 0; i < json.properties.langs.length; i++) {
-                    desc.innerHTML += "<li>" + json.properties.langs[i] + "</li>";
+                    if (i < json.properties.langs.length) {desc.innerHTML += json.properties.langs[i] + ", ";} else if (i < json.properties.langs.length - 1) {desc.innerHTML += json.properties.langs[i] + " and ";} else {desc.innerHTML += json.properties.langs[i];}
                 }
-                desc.innerHTML += "</ul></div><br>"
+                desc.innerHTML += "</p></div><br>"
 
             }
         }
