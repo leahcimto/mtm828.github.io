@@ -32,7 +32,7 @@ body {margin: 0; padding: 0; background-color: var(--bodyBg); width: 100%; heigh
     --jumbotronBg: #333333;
     --button: white;
     --buttonBg: #333333;
-    --ulTopNav: rgba(15, 15, 15, 0.5);
+    --ulTopNav: /*rgba(15, 15, 15, 0.5)*/green;
     --ulTopNavLiBg: crimson;
     --ulTopNavLiA: black;
     --ulFooterBorderTop: #333333;
@@ -46,14 +46,14 @@ body {margin: 0; padding: 0; background-color: var(--bodyBg); width: 100%; heigh
     --a: red;
     --button: white;
     --buttonBg: #333333;
-    --ulTopNavLiBg: #333333;
+    --ulTopNavLiBg: #0074e4;
     --ulTopnavLiA: black;
 }
 *.darkMode:hover {
     --a: green;
     --button: black;
     --buttonBg: #cccccc;
-    --ulTopNavLiBg: #cccccc;
+    --ulTopNavLiBg: #b01030;
     --ulTopnavLiA: white;
 }
 
