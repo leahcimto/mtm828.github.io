@@ -10,50 +10,50 @@ body {margin: 0; padding: 0; background-color: var(--bodyBg); width: 100%; heigh
     --p: black;
     --a: blue;
     --h: black;
-    --hBorderBottom: #ccc;
-    --jumbotronBg: #ccc;
+    --hBorderBottom: #cccccc;
+    --jumbotronBg: #cccccc;
     --button: black;
-    --buttonBg: #ccc;
-    --ulTopNav: black;
-    --ulTopNavLiBg: #ccc;
+    --buttonBg: #cccccc;
+    --ulTopNav: rgba(255, 255, 255, 0.5);
+    --ulTopNavLiBg: #006600;
     --ulTopNavLiA: white;
     --ulFooterBorderTop: #ccc;
     --ulFooterLiA: blue;
     --loadingScreenBg: white;
-    --loader: #ccc;
-    --loaderTop: dodgerblue;
+    --loader: #cccccc;
+    --loaderTop: #009999;
 }
 *.darkMode {
     --bodyBg: black;
     --p: white;
     --a: orange;
     --h: white;
-    --hBorderBottom: #333;
-    --jumbotronBg: #333;
+    --hBorderBottom: #333333;
+    --jumbotronBg: #333333;
     --button: white;
-    --buttonBg: #333;
+    --buttonBg: #333333;
     --ulTopNav: white;
-    --ulTopNavLiBg: #333;
+    --ulTopNavLiBg: #008000;
     --ulTopNavLiA: black;
-    --ulFooterBorderTop: #333;
+    --ulFooterBorderTop: #333333;
     --ulFooterLiA: orange;
     --loadingScreenBg: black;
-    --loader: #333;
-    --loaderTop: crimson;
+    --loader: #333333;
+    --loaderTop: #990000;
 }   
 
 *:hover {
     --a: red;
     --button: white;
-    --buttonBg: #333;
-    --ulTopNavLiBg: #333;
+    --buttonBg: #333333;
+    --ulTopNavLiBg: #333333;
     --ulTopnavLiA: black;
 }
 *.darkMode:hover {
     --a: green;
     --button: black;
-    --buttonBg: #ccc;
-    --ulTopNavLiBg: #ccc;
+    --buttonBg: #cccccc;
+    --ulTopNavLiBg: #cccccc;
     --ulTopnavLiA: white;
 }
 
