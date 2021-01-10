@@ -5,6 +5,7 @@ function silentIframeLogs() {
     var elements = document.querySelectorAll('iframe');
     for (i=0; i<elements.length; i++) {
         elements[i].console.log = function() {}
+    }
 }
 
 function toggleDarkMode() {
