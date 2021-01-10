@@ -148,7 +148,6 @@ ul.footer {
     display: inline-block;
 }
 .footer li a {
-    text-decoration: none !important;
     display: inline-block;
     margin: 10px;
     text-align: center;
