@@ -149,7 +149,6 @@ ul.footer {
 }
 .footer li a {
     text-decoration: none !important;
-    color: var(--ulFooterLiA);
     display: inline-block;
     margin: 10px;
     text-align: center;
