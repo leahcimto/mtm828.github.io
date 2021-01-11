@@ -29,7 +29,7 @@ body {margin: 0; padding: 0; background-color: var(--bodyBg); width: 100%; heigh
     --buttonBg: #333333;
     --ulTopNavLiBg: #0074e4;
 }
-*:hover {
+*.darkMode {
     --bodyBg: black;
     --p: white;
     --a: crimson;
@@ -47,7 +47,7 @@ body {margin: 0; padding: 0; background-color: var(--bodyBg); width: 100%; heigh
     --loader: #333333;
     --loaderTop: crimson;
 }
-*:hover {
+*.darkMode:hover {
     --a: #b01030;
     --button: black;
     --buttonBg: #cccccc;
