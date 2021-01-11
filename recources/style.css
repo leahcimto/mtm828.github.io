@@ -29,32 +29,29 @@ body {margin: 0; padding: 0; background-color: var(--bodyBg); width: 100%; heigh
     --buttonBg: #333333;
     --ulTopNavLiBg: #0074e4;
 }
-
-@media(prefers-color-scheme: dark) {
-    * {
-        --bodyBg: black;
-        --p: white;
-        --a: crimson;
-        --h: white;
-        --hBorderBottom: #333333;
-        --jumbotronBg: #333333;
-        --button: white;
-        --buttonBg: #333333;
-        --ulTopNav: #333333;
-        --ulTopNavLiBg: crimson;
-        --ulTopNavLiA: black;
-        --ulFooterBorderTop: #333333;
-        --ulFooterLiA: orange;
-        --loadingScreenBg: black;
-        --loader: #333333;
-        --loaderTop: crimson;
-    }
-    *:hover {
-        --a: #b01030;
-        --button: black;
-        --buttonBg: #cccccc;
-        --ulTopNavLiBg: #b01030;
-    }
+*:hover {
+    --bodyBg: black;
+    --p: white;
+    --a: crimson;
+    --h: white;
+    --hBorderBottom: #333333;
+    --jumbotronBg: #333333;
+    --button: white;
+    --buttonBg: #333333;
+    --ulTopNav: #333333;
+    --ulTopNavLiBg: crimson;
+    --ulTopNavLiA: black;
+    --ulFooterBorderTop: #333333;
+    --ulFooterLiA: orange;
+    --loadingScreenBg: black;
+    --loader: #333333;
+    --loaderTop: crimson;
+}
+*:hover {
+    --a: #b01030;
+    --button: black;
+    --buttonBg: #cccccc;
+    --ulTopNavLiBg: #b01030;
 }
 
 #loadingScreen {
