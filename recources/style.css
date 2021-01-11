@@ -93,7 +93,7 @@ a:active {text-decoration: underline;}
 
 h1, h2, h3, h4, h5, h6 {color: var(--h); border-bottom: 1px solid var(--hBorderBottom); font-size: 35px;}
 
-li {list-style-type: none; padding-left: 10px; transition: 0s; font-size: 15px;}
+li {list-style-type: none; padding-left: 10px; font-size: 15px;}
 ul {font-size: 50px;}
 
 .jumbotron {background-color: var(--jumbotronBg);}
@@ -119,7 +119,6 @@ button {background-color: var(--buttonBg); color: var(--button); outline: none; 
     display: block;
     padding: 10px;
     line-height: 50px;
-    transition: 1s;
 }
 .topNav li a {
     color: var(--ulTopNavLiA);
