@@ -23,12 +23,9 @@ function toggleDarkMode() {
 
 silentIframeLogs();
 window.setInterval(toggleDarkMode, 100);
-window.onload = function() {
-    if (window.localStorage == null) {window.localStorage.setItem("darkMode", "false");}
-    if (window.localStorage.getItem("darkMode") == "true") {
-        document.getElementById("darkModeSwitch").checked = true;
-    } else {
-        document.getElementById("darkModeSwitch").checked = false;
-    }
-    setTimeout(function() {document.querySelector("#loadingScreen").style.display = "none";}, 2000)
+if (window.localStorage == null) {window.localStorage.setItem("darkMode", "false");}
+if (window.localStorage.getItem("darkMode") == "true") {
+    document.getElementById("darkModeSwitch").checked = true;
+} else {
+    document.getElementById("darkModeSwitch").checked = false;
 }
