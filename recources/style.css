@@ -99,6 +99,7 @@ ul {font-size: 50px;}
 .jumbotron > * {padding: 10px;}
 
 button {background-color: var(--buttonBg); color: var(--button); outline: none; border: none; margin: 0px; padding: 10px; border-radius: 5px; font-size: 150%; font-family: 'courier new';}
+.projectContainer {width: 100%; display: inline-flex; justify-content: center; overflow-x: scroll;}
 /**/
 
 .topNav {
