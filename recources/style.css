@@ -83,7 +83,7 @@ button {background-color: var(--buttonBg); color: var(--button); outline: none; 
     list-style-type: none;
 }
 .topNav li {background-color: var(--ulTopNavLiBg); float: left; display: block; padding: 10px; line-height: 50px;}
-.topNav li::before {content: "";}
+.topNav li::before {display: none;}
 .topNav li a {color: var(--ulTopNavLiA); padding: 14px; font-size: 175%; display: block; text-decoration: none !important; text-align: center;}
 
 .switch {position: relative; display: inline-block; width: 75px; height: 34px;}
@@ -95,5 +95,5 @@ input:checked + .slider::before {background-color: white; transform: translateX(
 
 ul.footer {display: inline-block; width: 100%; border-top: 1px solid var(--ulFooterBorderTop); overflow: hidden;}
 .footer li {list-style-type: none; display: inline-block;}
-.footer li::before {content: "";}
+.footer li::before {display: none;}
 .footer li a {display: inline-block; margin: 10px; text-align: center;}
