@@ -1,13 +1,6 @@
 var i;
 var j;
 
-function silentIframeLogs() {
-    var elements = document.querySelectorAll('iframe');
-    for (i=0; i<elements.length; i++) {
-        elements[i].console.log = function() {}
-    }
-}
-
 function toggleDarkMode() {
     var switchState = document.getElementById("darkModeSwitch").checked;
     var elements = document.querySelectorAll("*");
@@ -21,7 +14,6 @@ function toggleDarkMode() {
     }
 }
 
-silentIframeLogs();
 window.setInterval(toggleDarkMode, 100);
 if (window.localStorage == null) {window.localStorage.setItem("darkMode", "false");}
 if (window.localStorage.getItem("darkMode") == "true") {
