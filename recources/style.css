@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {color: var(--h); border-bottom: 1px solid var(--hBorderB
 
 ul {font-size: 50px;}
 li {list-style-type: none; font-size: 15px;}
-li::before {content: "/2022"; font-weight: bold; display: inline-block;}
+li::before {content: "\2022"; font-weight: bold; display: inline-block;}
 
 .jumbotron {background-color: var(--jumbotronBg);}
 .jumbotron > * {padding: 10px;}
@@ -82,41 +82,18 @@ button {background-color: var(--buttonBg); color: var(--button); outline: none; 
     box-sizing: content-box;
     list-style-type: none;
 }
-.topNav li {
-    background-color: var(--ulTopNavLiBg);
-    float: left;
-    display: block;
-    padding: 10px;
-    line-height: 50px;
-}
-.topNav li a {
-    color: var(--ulTopNavLiA);
-    padding: 14px;
-    font-size: 175%;
-    display: block;
-    text-decoration: none !important;
-    text-align: center;
-}
+.topNav li {background-color: var(--ulTopNavLiBg); float: left; display: block; padding: 10px; line-height: 50px;}
+.topNav li::before {content: "";}
+.topNav li a {color: var(--ulTopNavLiA); padding: 14px; font-size: 175%; display: block; text-decoration: none !important; text-align: center;}
 
-.switch { position: relative; display: inline-block; width: 75px; height: 34px;}
+.switch {position: relative; display: inline-block; width: 75px; height: 34px;}
 .switch input {opacity: 0; width: 0; height: 0;}
 .slider {position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: white; border-radius: 34px; transform: translateY(20%);}
 .slider::before {position: absolute; content: ""; height: 26px; width: 26px; left: 4px; bottom: 4px; background-color: black; border-radius: 50%;}
 input:checked + .slider {background-color: black;}
 input:checked + .slider::before {background-color: white; transform: translateX(40px);}
 
-ul.footer {
-    display: inline-block;
-    width: 100%;
-    border-top: 1px solid var(--ulFooterBorderTop);
-    overflow: hidden;
-}
-.footer li {
-    list-style-type: none;
-    display: inline-block;
-}
-.footer li a {
-    display: inline-block;
-    margin: 10px;
-    text-align: center;
-}
+ul.footer {display: inline-block; width: 100%; border-top: 1px solid var(--ulFooterBorderTop); overflow: hidden;}
+.footer li {list-style-type: none; display: inline-block;}
+.footer li::before {content: "";}
+.footer li a {display: inline-block; margin: 10px; text-align: center;}
