@@ -14,10 +14,12 @@ function toggleDarkMode() {
     }
 }
 
-window.setInterval(toggleDarkMode, 100);
-if (window.localStorage == null) {window.localStorage.setItem("darkMode", "false");}
-if (window.localStorage.getItem("darkMode") == "true") {
-    document.getElementById("darkModeSwitch").checked = true;
-} else {
-    document.getElementById("darkModeSwitch").checked = false;
+window.onload = function() {
+    window.setInterval(toggleDarkMode, 100);
+    if (window.localStorage == null) {window.localStorage.setItem("darkMode", "false");}
+    if (window.localStorage.getItem("darkMode") == "true") {
+        document.getElementById("darkModeSwitch").checked = true;
+    } else {
+        document.getElementById("darkModeSwitch").checked = false;
+    }
 }
