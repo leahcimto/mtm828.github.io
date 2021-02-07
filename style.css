@@ -1,6 +1,6 @@
-/**************/
-/*IMPORT FONTS*/
-/**************/
+/****************/
+/*IMPORT FONTS  */
+/****************/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
@@ -11,9 +11,9 @@
 body {margin: 0px; padding: 0px; background-color: var(--bg); width: 100%; height: 100%; font-family: 'montserrat';}
 .pageContent {padding: 15px;}
 
-/**********/
-/*CSS VARS*/
-/**********/
+/****************/
+/*CSS VARS      */
+/****************/
 * {--bg: #FFFFFF; --content: #000000; --specialContent: #1E90FF; --contentBg: #CCCCCC; --contentBorder: var(--contentBg);}
 :is(a, button, ul.topNav > *):hover {--specialContent: #0074e4;}
 *.darkMode {--bg: #000000; --content: #FFFFFF; --specialContent: #ed143d; --contentBg: #333333;}
@@ -57,9 +57,9 @@ pre, code {font-family: monospace; background-color: var(--contentBg); color: va
 .projectCard .projectCardDesc {float: right; width: 65%; background-color: var(--contentBg);}
 .projectCard .projectCardDesc h3 {border-bottom: 0px; padding-left: 50%; background-color: var(--contentBg);}
 
-/***********************/
-/*STYLE TOPNAV & FOOTER*/
-/***********************/
+/****************/
+/*TOPNAV&FOOTER */
+/****************/
 .topNav {padding: 0px; margin: 0px; background-color: var(--contentBg); display: inline-block; position: sticky; top: 0px; width: 100%; box-sizing: content-box; list-style-type: none;}
 .topNav li {background-color: var(--specialContent); float: left; display: block; padding: 10px; line-height: 50px;}
 .topNav li::before {display: none;}
