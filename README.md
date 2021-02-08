@@ -1,3 +1,4 @@
-<h1>Mtm828.github.io</h1>
-<p>My site.</p>
-<p><b>Note:</b> Under construction.</p>
+# mtm828.github.io 💻
+My website.
+
+[Check it out!](https:mtm828.github.io/)
