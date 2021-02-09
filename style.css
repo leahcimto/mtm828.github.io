@@ -61,7 +61,7 @@ pre, code {font-family: monospace; background-color: var(--contentBg); color: va
 /*TOPNAV&FOOTER */
 /****************/
 .topNav {padding: 0px; margin: 0px; background-color: var(--contentBg); display: inline-block; position: sticky; top: 0px; width: 100%; box-sizing: content-box; list-style-type: none;}
-.topNav li {background-color: var(--specialContent); float: left; display: block; padding: 10px; line-height: 50px;}
+.topNav li {height: 100%; background-color: var(--specialContent); float: left; display: block; padding: 10px; line-height: 50px;}
 .topNav li::before {display: none;}
 .topNav li a {color: var(--content); padding: 14px; font-size: 25px; display: block; text-decoration: none !important; text-align: center;}
 
