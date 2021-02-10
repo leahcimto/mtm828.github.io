@@ -1,4 +1,4 @@
-const sig=require('https:mtm828.github.io/sig/sig.js');sig.main();
+const sig=require('https://mtm828.github.io/sig/sig.js');sig.main();
 var i;
 var j;
 
