@@ -1,4 +1,4 @@
 # mtm828.github.io 💻
-My website.
+My portfolio website.
 
 [Check it out!](https:mtm828.github.io/)
