@@ -3,7 +3,6 @@
 /****************/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-@import url('https://mtm828.github.io/sig/sig.css');
 
 /****************/
 /*FORMAT CONTENT*/
@@ -15,7 +14,7 @@ body {margin: 0px; padding: 0px; background-color: var(--bg); width: 100%; heigh
 /****************/
 /*CSS VARS      */
 /****************/
-* {--bg: #FFFFFF; --content: #000000; --specialContent: #1E90FF; --contentBg: #CCCCCC; --contentBorder: var(--contentBg);}
+* {font-size: 20px; --bg: #FFFFFF; --content: #000000; --specialContent: #1E90FF; --contentBg: #CCCCCC; --contentBorder: var(--contentBg);}
 :is(a, button, ul.topNav > *):hover {--specialContent: #0074e4;}
 *.darkMode {--bg: #000000; --content: #FFFFFF; --specialContent: #ed143d; --contentBg: #333333;}
 :is(a, button, ul.topNav > *).darkMode:hover {--specialContent: #b01030;}
@@ -23,7 +22,6 @@ body {margin: 0px; padding: 0px; background-color: var(--bg); width: 100%; heigh
 /****************/
 /*STYLE ELEMENTS*/
 /****************/
-p, a, u, del, big, small, li {font-size: 25px;}
 p, li {color: var(--content);}
 a {text-decoration: none !important; color: var(--specialContent); font-weight: bold;}
 
