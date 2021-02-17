@@ -28,7 +28,7 @@ p, li {color: var(--content);}
 a {text-decoration: none !important; color: var(--specialContent); font-weight: bold;}
 
 h1, h2, h3, h4, h5, h6 {padding: 10px; margin-bottom: 10px; color: var(--content); border-bottom: 1px solid var(--contentBorder); font-size: 35px;}
-h6{font-size:75%;} h5{font-size:80%;} h4{font-size:85%;} h3{font-size:90%;} h2{font-size:95%;} h1{font-size:100%;}
+h6{font-size:125%;} h5{font-size:130%;} h4{font-size:135%;} h3{font-size:140%;} h2{font-size:145%;} h1{font-size:150%;}
 
 ul {font-size: 50px;}
 ul li {list-style: none;}
